@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Savvana Naveen Kumar — Recruitment & Staffing Leader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  /* ============ THEME TOKENS ============ */
+  :root {
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --maxw: 1140px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --radius: 18px;
+  }
+
+  html[data-theme="dark"] {
+    --bg: #0A0E1A;
+    --bg-2: #0C1322;
+    --surface: #121A2E;
+    --surface-2: #18223F;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.16);
+    --text: #EAEEF7;
+    --text-soft: #C2CADD;
+    --text-muted: #8A93AC;
+    --accent: #5B8CFF;
+    --accent-2: #2DD4BF;
+    --accent-3: #FBBF77;
+    --glow: rgba(91,140,255,0.22);
+    --net-line: rgba(120,160,255,0.16);
+    --net-dot: rgba(150,190,255,0.55);
+    --shadow: 0 24px 60px -24px rgba(0,0,0,0.7);
+    --grid-line: rgba(255,255,255,0.035);
+  }
+
+  html[data-theme="light"] {
+    --bg: #F3F6FC;
+    --bg-2: #EAF0F9;
+    --surface: #FFFFFF;
+    --surface-2: #F6F9FE;
+    --border: rgba(20,32,60,0.10);
+    --border-strong: rgba(20,32,60,0.18);
+    --text: #14203C;
+    --text-soft: #2E3A57;
+    --text-muted: #5E688A;
+    --accent: #2B5FE3;
+    --accent-2: #0E9C82;
+    --accent-3: #C2792A;
+    --glow: rgba(43,95,227,0.14);
+    --net-line: rgba(43,95,227,0.14);
+    --net-dot: rgba(43,95,227,0.45);
+    --shadow: 0 24px 50px -28px rgba(20,40,90,0.35);
+    --grid-line: rgba(20,32,60,0.04);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background 0.5s var(--ease), color 0.5s var(--ease);
+  }
+
+  ::selection { background: var(--accent); color: #fff; }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: var(--accent);
+    display: inline-block;
+  }
+
+  h2.section-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(28px, 4.5vw, 46px);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin: 16px 0 0;
+  }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 28px;
+    backdrop-filter: blur(14px);
+    background: color-mix(in srgb, var(--bg) 72%, transparent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.4s var(--ease), background 0.4s var(--ease), padding 0.4s var(--ease);
+  }
+  nav.scrolled { border-bottom-color: var(--border); padding: 12px 28px; }
+  .nav-brand {
+    font-family: var(--font-display);
+    font-weight: 600; font-size: 16px;
+    letter-spacing: -0.01em;
+    display: flex; align-items: center; gap: 11px;
+  }
+  .nav-mark {
+    width: 34px; height: 34px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: grid; place-items: center;
+    color: #fff; font-weight: 700; font-size: 15px;
+    box-shadow: 0 6px 18px -6px var(--glow);
+  }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-links a {
+    font-size: 14px; color: var(--text-soft); position: relative;
+    transition: color 0.3s var(--ease);
+  }
+  .nav-links a::after {
+    content: ""; position: absolute; left: 0; bottom: -5px;
+    width: 0; height: 1.5px; background: var(--accent);
+    transition: width 0.3s var(--ease);
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a:hover::after { width: 100%; }
+
+  .theme-toggle {
+    width: 46px; height: 46px; border-radius: 12px;
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text); cursor: pointer;
+    display: grid; place-items: center;
+    transition: transform 0.4s var(--ease), background 0.3s, border-color 0.3s;
+  }
+  .theme-toggle:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .theme-toggle svg { width: 20px; height: 20px; }
+  .theme-toggle .moon { display: none; }
+  html[data-theme="dark"] .theme-toggle .sun { display: none; }
+  html[data-theme="dark"] .theme-toggle .moon { display: block; }
+
+  .nav-menu-btn { display: none; }
+
+  /* ============ HERO ============ */
+  header.hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex; align-items: center;
+    overflow: hidden;
+    padding: 120px 0 60px;
+  }
+  #net-canvas {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+  }
+  .hero-glow {
+    position: absolute; z-index: 0;
+    width: 60vw; height: 60vw; max-width: 720px; max-height: 720px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--glow), transparent 68%);
+    top: -10%; right: -10%;
+    filter: blur(20px);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 2; max-width: 860px; }
+  .hero-status {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: var(--font-mono); font-size: 12.5px;
+    letter-spacing: 0.06em;
+    padding: 7px 15px; border-radius: 100px;
+    border: 1px solid var(--border-strong);
+    background: color-mix(in srgb, var(--surface) 60%, transparent);
+    color: var(--text-soft);
+    backdrop-filter: blur(8px);
+  }
+  .hero-status .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent-2);
+    box-shadow: 0 0 0 0 var(--accent-2);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent-2) 70%, transparent); }
+    70% { box-shadow: 0 0 0 9px transparent; }
+    100% { box-shadow: 0 0 0 0 transparent; }
+  }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(42px, 8vw, 88px);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    margin: 22px 0 0;
+  }
+  .hero h1 .grad {
+    background: linear-gradient(115deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-role {
+    font-family: var(--font-mono);
+    font-size: clamp(14px, 2vw, 18px);
+    color: var(--text-soft);
+    margin-top: 20px;
+    letter-spacing: 0.02em;
+  }
+  .hero-role .sep { color: var(--accent); margin: 0 8px; }
+  .hero-lede {
+    font-size: clamp(16px, 2vw, 19px);
+    color: var(--text-soft);
+    max-width: 620px;
+    margin-top: 22px;
+  }
+  .hero-cta { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+  .btn {
+    font-family: var(--font-body); font-weight: 600; font-size: 15px;
+    padding: 14px 26px; border-radius: 12px; cursor: pointer;
+    border: 1px solid transparent;
+    display: inline-flex; align-items: center; gap: 10px;
+    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.3s, border-color 0.3s;
+  }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #fff;
+    box-shadow: 0 14px 34px -12px var(--glow);
+  }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -12px var(--glow); }
+  .btn-ghost {
+    background: transparent; color: var(--text);
+    border-color: var(--border-strong);
+  }
+  .btn-ghost:hover { transform: translateY(-3px); border-color: var(--accent); }
+
+  .scroll-hint {
+    position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+    z-index: 2;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--text-muted);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+  .scroll-hint .line {
+    width: 1px; height: 38px;
+    background: linear-gradient(var(--accent), transparent);
+    animation: scrolldown 2s infinite;
+  }
+  @keyframes scrolldown { 0%,100%{opacity:.3; transform:scaleY(.7) translateY(-4px);} 50%{opacity:1; transform:scaleY(1) translateY(0);} }
+
+  /* ============ STATS STRIP ============ */
+  .stats {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-2);
+    position: relative; z-index: 3;
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+  }
+  .stat {
+    padding: 40px 28px;
+    border-right: 1px solid var(--border);
+    transition: background 0.4s var(--ease);
+  }
+  .stat:last-child { border-right: none; }
+  .stat:hover { background: var(--surface); }
+  .stat-num {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(34px, 5vw, 52px); line-height: 1;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .stat-label {
+    font-family: var(--font-mono); font-size: 12px;
+    color: var(--text-muted); margin-top: 12px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+
+  /* ============ SECTIONS ============ */
+  section { padding: 110px 0; position: relative; }
+  .section-head { margin-bottom: 56px; max-width: 720px; }
+  .section-head p { color: var(--text-muted); margin-top: 16px; font-size: 16.5px; }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: start; }
+  .about-text p { color: var(--text-soft); margin-bottom: 18px; font-size: 16.5px; }
+  .about-text strong { color: var(--text); font-weight: 600; }
+  .competency-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 30px;
+    box-shadow: var(--shadow);
+  }
+  .competency-card h3 {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 9px; }
+  .chip {
+    font-size: 13.5px; padding: 8px 14px; border-radius: 100px;
+    background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text-soft);
+    transition: transform 0.3s var(--ease), border-color 0.3s, color 0.3s, background 0.3s;
+    cursor: default;
+  }
+  .chip:hover {
+    transform: translateY(-2px); border-color: var(--accent);
+    color: var(--text); background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  }
+
+  /* TIMELINE */
+  .timeline { position: relative; margin-top: 12px; }
+  .timeline::before {
+    content: ""; position: absolute; left: 19px; top: 6px; bottom: 6px;
+    width: 2px; background: var(--border);
+  }
+  .timeline-progress {
+    position: absolute; left: 19px; top: 6px; width: 2px;
+    background: linear-gradient(var(--accent), var(--accent-2));
+    height: 0; transition: height 0.1s linear;
+  }
+  .job { position: relative; padding-left: 64px; padding-bottom: 48px; }
+  .job:last-child { padding-bottom: 0; }
+  .job-node {
+    position: absolute; left: 10px; top: 4px;
+    width: 20px; height: 20px; border-radius: 50%;
+    background: var(--bg); border: 2px solid var(--border-strong);
+    z-index: 2; transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  }
+  .job.in-view .job-node { border-color: var(--accent); box-shadow: 0 0 0 6px var(--glow); }
+  .job-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 26px 28px;
+    transition: transform 0.4s var(--ease), border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  }
+  .job-card:hover { transform: translateY(-4px); border-color: var(--border-strong); box-shadow: var(--shadow); }
+  .job-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .job-title { font-family: var(--font-display); font-weight: 600; font-size: 21px; letter-spacing: -0.01em; }
+  .job-date {
+    font-family: var(--font-mono); font-size: 12.5px; color: var(--accent);
+    white-space: nowrap; padding: 4px 11px; border-radius: 100px;
+    border: 1px solid var(--border); background: var(--surface-2);
+  }
+  .job-meta {
+    font-size: 14.5px; color: var(--text-muted); margin-top: 6px;
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .job-meta .company { color: var(--text-soft); font-weight: 600; }
+  .job-bullets { list-style: none; margin-top: 18px; display: grid; gap: 11px; }
+  .job-bullets li {
+    position: relative; padding-left: 22px; font-size: 15px; color: var(--text-soft);
+  }
+  .job-bullets li::before {
+    content: ""; position: absolute; left: 0; top: 9px;
+    width: 7px; height: 7px; border-radius: 2px; transform: rotate(45deg);
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+  .job-tags { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 7px; }
+  .tag-mini {
+    font-family: var(--font-mono); font-size: 11.5px; padding: 4px 10px;
+    border-radius: 7px; background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+  .tag-mini.is-tool { color: var(--accent-2); border-color: color-mix(in srgb, var(--accent-2) 30%, var(--border)); }
+
+  /* CLIENTS MARQUEE */
+  .clients { background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .marquee-track { display: flex; gap: 14px; width: max-content; animation: marquee 38s linear infinite; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  .marquee.rev .marquee-track { animation-direction: reverse; animation-duration: 46s; margin-top: 14px; }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+  .client-pill {
+    font-size: 14px; padding: 11px 20px; border-radius: 12px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text-soft); white-space: nowrap; font-weight: 500;
+    display: flex; align-items: center; gap: 9px;
+  }
+  .client-pill .pin { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+  .client-pill.fed .pin { background: var(--accent-3); }
+
+  /* SKILLS */
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 64px; }
+  .skill-row { margin-bottom: 4px; }
+  .skill-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 11px; }
+  .skill-name { font-weight: 600; font-size: 16px; }
+  .skill-val { font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
+  .skill-bar { height: 7px; border-radius: 100px; background: var(--surface-2); border: 1px solid var(--border); overflow: hidden; }
+  .skill-fill {
+    height: 100%; width: 0; border-radius: 100px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transition: width 1.1s var(--ease);
+  }
+
+  /* EDUCATION + CERT */
+  .edu-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; }
+  .panel {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 32px;
+  }
+  .panel h3 { font-family: var(--font-display); font-size: 19px; font-weight: 600; margin-bottom: 22px; }
+  .edu-item { padding: 16px 0; border-bottom: 1px solid var(--border); }
+  .edu-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .edu-item .deg { font-weight: 600; font-size: 16px; }
+  .edu-item .inst { color: var(--text-muted); font-size: 14px; margin-top: 3px; }
+  .cert-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 12px; color: var(--accent-2);
+    border: 1px solid color-mix(in srgb, var(--accent-2) 35%, var(--border));
+    background: color-mix(in srgb, var(--accent-2) 8%, var(--surface));
+    padding: 6px 12px; border-radius: 100px; margin-bottom: 18px;
+  }
+  .cert-detail { color: var(--text-soft); font-size: 15px; }
+  .cert-detail span { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+  /* BEYOND WORK */
+  .beyond-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .beyond-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 30px; position: relative; overflow: hidden;
+    transition: transform 0.4s var(--ease), border-color 0.4s;
+  }
+  .beyond-card:hover { transform: translateY(-5px); border-color: var(--border-strong); }
+  .beyond-card .ic {
+    width: 48px; height: 48px; border-radius: 13px; display: grid; place-items: center;
+    background: color-mix(in srgb, var(--accent) 14%, var(--surface));
+    color: var(--accent); margin-bottom: 20px;
+  }
+  .beyond-card .ic svg { width: 24px; height: 24px; }
+  .beyond-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+  .beyond-card p { color: var(--text-muted); font-size: 14.5px; }
+
+  /* CONTACT / FOOTER */
+  .contact { text-align: center; }
+  .contact h2 {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(34px, 6vw, 64px); letter-spacing: -0.03em; line-height: 1.02;
+  }
+  .contact h2 .grad {
+    background: linear-gradient(115deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .contact p { color: var(--text-muted); margin: 20px auto 38px; max-width: 520px; font-size: 16.5px; }
+  .contact-methods { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .contact-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 22px; display: flex; align-items: center; gap: 13px;
+    transition: transform 0.35s var(--ease), border-color 0.3s, box-shadow 0.3s;
+  }
+  .contact-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
+  .contact-card svg { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; }
+  .contact-card .cc-label { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.12em; }
+  .contact-card .cc-val { font-size: 14.5px; font-weight: 500; }
+
+  footer {
+    border-top: 1px solid var(--border); margin-top: 90px;
+    padding: 30px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+  }
+  footer .fnote { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+
+  /* ============ REVEAL ANIMATIONS ============ */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+  .reveal.show { opacity: 1; transform: none; }
+  .reveal.d1 { transition-delay: 0.08s; }
+  .reveal.d2 { transition-delay: 0.16s; }
+  .reveal.d3 { transition-delay: 0.24s; }
+
+  .hero-anim { opacity: 0; transform: translateY(24px); animation: heroUp 0.9s var(--ease) forwards; }
+  .ha1 { animation-delay: 0.1s; } .ha2 { animation-delay: 0.24s; } .ha3 { animation-delay: 0.38s; }
+  .ha4 { animation-delay: 0.52s; } .ha5 { animation-delay: 0.66s; }
+  @keyframes heroUp { to { opacity: 1; transform: none; } }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 880px) {
+    .nav-links { display: none; }
+    .about-grid, .edu-grid { grid-template-columns: 1fr; gap: 36px; }
+    .skills-grid { grid-template-columns: 1fr; gap: 28px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2) { border-right: none; }
+    .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--border); }
+    .beyond-grid { grid-template-columns: 1fr; }
+    section { padding: 80px 0; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 20px; }
+    nav { padding: 14px 20px; }
+    .job { padding-left: 52px; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .stat { border-right: none; border-bottom: 1px solid var(--border); }
+    .stat:last-child { border-bottom: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+    .hero-anim { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-brand" href="#top">
+    <span class="nav-mark">SN</span>
+    Savvana Naveen Kumar
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#clients">Clients</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <canvas id="net-canvas"></canvas>
+  <div class="hero-glow"></div>
+  <div class="wrap hero-inner">
+    <span class="hero-status hero-anim ha1"><span class="dot"></span> Senior Accounts Manager · SoftHQ Inc.</span>
+    <h1 class="hero-anim ha2">Connecting <span class="grad">talent</span><br/>to opportunity.</h1>
+    <p class="hero-role hero-anim ha3">Recruitment & Staffing Leader <span class="sep">/</span> US State &amp; Federal <span class="sep">/</span> MBA · CHRMP</p>
+    <p class="hero-lede hero-anim ha4">18+ years building and leading recruitment teams that staff government agencies and enterprise clients across the United States — from sourcing strategy to offer, end to end.</p>
+    <div class="hero-cta hero-anim ha5">
+      <a class="btn btn-primary" href="#contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        Get in touch
+      </a>
+      <a class="btn btn-ghost" href="#experience">
+        View experience
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><span class="line"></span></div>
+</header>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat"><div class="stat-num" data-count="16" data-suffix="+">0</div><div class="stat-label">Years in recruitment</div></div>
+      <div class="stat"><div class="stat-num" data-count="27" data-suffix="">0</div><div class="stat-label">Largest team led</div></div>
+      <div class="stat"><div class="stat-num" data-count="30" data-suffix="+">0</div><div class="stat-label">State &amp; federal clients</div></div>
+      <div class="stat"><div class="stat-num" data-count="5" data-suffix="">0</div><div class="stat-label">Organisations served</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">About</span>
+      <h2 class="section-title">A people-first operator with an<br/>end-to-end command of hiring.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm an analytical, results-oriented recruitment leader with <strong>16+ years of end-to-end recruiting and HR administration</strong>. My work spans the full hiring lifecycle — sourcing, screening, interview coordination, offer preparation, background verification and onboarding.</p>
+        <p>I've spent recent years specialising in <strong>US State &amp; Federal staffing</strong>, standing up dedicated delivery teams, training recruiters on government requirements, and building the systematic processes that keep complex public-sector hiring on schedule.</p>
+        <p>Beyond delivery, I handle <strong>performance management (KRA / KPA / KPI), training &amp; development, HRIS and policy design</strong> — and I take real pride in fostering a cooperative, accountable team culture.</p>
+      </div>
+      <div class="competency-card reveal d1">
+        <h3>Core competencies</h3>
+        <div class="chips">
+          <span class="chip">Full-cycle recruiting</span>
+          <span class="chip">US State &amp; Federal staffing</span>
+          <span class="chip">Team leadership</span>
+          <span class="chip">Account management</span>
+          <span class="chip">Revenue generation</span>
+          <span class="chip">Performance appraisal</span>
+          <span class="chip">MBO · KRA / KPA / KPI</span>
+          <span class="chip">Training &amp; development</span>
+          <span class="chip">HRIS</span>
+          <span class="chip">Background verification</span>
+          <span class="chip">Rate negotiation</span>
+          <span class="chip">H1 transfer &amp; OPT hiring</span>
+          <span class="chip">Vendor &amp; client coordination</span>
+          <span class="chip">RFP support</span>
+          <span class="chip">Sourcing strategy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Career</span>
+      <h2 class="section-title">Seventeen years, one through-line:<br/>building teams that deliver.</h2>
+      <p>A progression from hands-on recruiter to leader of multi-team delivery organisations serving public-sector and enterprise clients across the United States.</p>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <div class="timeline-progress" id="tlProgress"></div>
+
+      <!-- Job 1 -->
+      <div class="job reveal">
+        <span class="job-node"></span>
+        <div class="job-card">
+          <div class="job-top">
+            <div class="job-title">Senior Accounts Manager</div>
+            <span class="job-date">Jun 2022 — Present</span>
+          </div>
+          <div class="job-meta"><span class="company">SoftHQ Inc.</span> · Remote</div>
+          <ul class="job-bullets">
+            <li>Built and lead a 13-member delivery team dedicated to State &amp; Federal clients — 2 team leads, 10 recruiters and a data analyst.</li>
+            <li>Define client requirements, train the team on government hiring standards, and run a systematic end-to-end process for IT and non-IT roles.</li>
+            <li>Coordinate background-check and contracts teams on new hires and starts, and partner with presales on RFPs.</li>
+            <li>Run weekly coordination with public-sector points of contact and maintain candidate &amp; client records across the pipeline.</li>
+          </ul>
+          <div class="job-tags">
+            <span class="tag-mini">State of MA</span><span class="tag-mini">CalPERS</span><span class="tag-mini">LAUSD</span><span class="tag-mini">Miami-Dade Schools</span><span class="tag-mini">State of WA</span>
+            <span class="tag-mini is-tool">CEIPAL ATS</span><span class="tag-mini is-tool">Vector VMS</span><span class="tag-mini is-tool">Commbuys</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="job reveal">
+        <span class="job-node"></span>
+        <div class="job-card">
+          <div class="job-top">
+            <div class="job-title">Recruitment Manager</div>
+            <span class="job-date">Mar 2020 — Jun 2022</span>
+          </div>
+          <div class="job-meta"><span class="company">Coolsoft LLC</span> · Bangalore, KA</div>
+          <ul class="job-bullets">
+            <li>Led a 27-member organisation — 4 team leads, 16 recruiters, 5 presales and 2 bench-sales specialists.</li>
+            <li>Owned revenue generation, business development, and client retention &amp; acquisition for US staffing across all locations.</li>
+            <li>Managed full-cycle hiring including H1 transfer and OPT, negotiated pay rates, and matched candidates to client positions.</li>
+            <li>Introduced metrics and new processes that sharpened recruiter accountability and sense of urgency on open requisitions.</li>
+          </ul>
+          <div class="job-tags">
+            <span class="tag-mini">19 US States</span><span class="tag-mini">CVS Health</span><span class="tag-mini">Morgan Stanley</span><span class="tag-mini">LG&amp;E</span><span class="tag-mini">LTI</span>
+            <span class="tag-mini is-tool">CoolWorks ATS</span><span class="tag-mini is-tool">Beeline</span><span class="tag-mini is-tool">Covendis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="job reveal">
+        <span class="job-node"></span>
+        <div class="job-card">
+          <div class="job-top">
+            <div class="job-title">Recruitment Manager</div>
+            <span class="job-date">Oct 2016 — Jan 2020</span>
+          </div>
+          <div class="job-meta"><span class="company">Wifinity Technologies</span> · Bangalore, KA</div>
+          <ul class="job-bullets">
+            <li>Led a team of 10+ recruiters placing high-end IT professionals on contract and full-time roles across the USA.</li>
+            <li>Gathered and qualified client requirements, ran technical screening, and negotiated rates with resources and corporations.</li>
+            <li>Specialised in software engineers/architects, database, network/security, QA, and technical program/project managers.</li>
+            <li>Built direct-client and prime-vendor relationships under MSA, and hired recruiters for the organisation.</li>
+          </ul>
+          <div class="job-tags">
+            <span class="tag-mini">Capital One</span><span class="tag-mini">GDIT</span><span class="tag-mini">Tech Mahindra</span><span class="tag-mini">Cognizant</span><span class="tag-mini">Infosys</span>
+            <span class="tag-mini is-tool">Taleo</span><span class="tag-mini is-tool">Synergy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="job reveal">
+        <span class="job-node"></span>
+        <div class="job-card">
+          <div class="job-top">
+            <div class="job-title">Senior HR / IT Recruiter</div>
+            <span class="job-date">Jul 2015 — Oct 2016</span>
+          </div>
+          <div class="job-meta"><span class="company">Gantec Corporation</span> · Chennai, TN</div>
+          <ul class="job-bullets">
+            <li>Led recruiters and bench-sales consultants, managing full-life-cycle recruiting from postings to final offers.</li>
+            <li>Pre-screened candidates with detailed phone screens to ensure the right fit, sourcing from end clients and partners.</li>
+            <li>Worked C2C, 1099 and W-2 engagements; coordinated interviews, references, background and drug-test initiation.</li>
+            <li>Established weekly reporting on requirements, submissions and interviews, plus team performance reviews.</li>
+          </ul>
+          <div class="job-tags">
+            <span class="tag-mini">Full-cycle IT recruiting</span><span class="tag-mini">C2C · 1099 · W-2</span><span class="tag-mini">Team reporting</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 5 -->
+      <div class="job reveal">
+        <span class="job-node"></span>
+        <div class="job-card">
+          <div class="job-top">
+            <div class="job-title">Senior HR</div>
+            <span class="job-date">Sep 2008 — Apr 2015</span>
+          </div>
+          <div class="job-meta"><span class="company">Octave Technologies</span> · Chennai, TN</div>
+          <ul class="job-bullets">
+            <li>Sourced, interviewed and selected applicants for technical positions, working with hiring managers on job duties.</li>
+            <li>Ran job-board, social and corporate-site postings; performed background checks and built passive-candidate networks.</li>
+            <li>Maintained ongoing university and campus-recruiting relationships, organising pre-visit activities and interview schedules.</li>
+            <li>Identified and pursued top prospects through targeted pre-screening and special office-visit invitations.</li>
+          </ul>
+          <div class="job-tags">
+            <span class="tag-mini">Campus recruiting</span><span class="tag-mini">Background checks</span><span class="tag-mini">Sourcing &amp; networking</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients" id="clients">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:40px;">
+      <span class="eyebrow">Trusted by</span>
+      <h2 class="section-title">Public-sector &amp; enterprise clients<br/>across the United States.</h2>
+    </div>
+  </div>
+  <div class="marquee reveal">
+    <div class="marquee-track" id="mq1"></div>
+  </div>
+  <div class="marquee rev reveal" style="padding-bottom:8px;">
+    <div class="marquee-track" id="mq2"></div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Expertise</span>
+      <h2 class="section-title">Where the depth is.</h2>
+      <p>A self-assessed snapshot of the disciplines built up over five organisations and seventeen years.</p>
+    </div>
+    <div class="skills-grid" id="skills">
+      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">US Staffing &amp; Recruitment</span><span class="skill-val">98%</span></div><div class="skill-bar"><div class="skill-fill" data-w="98"></div></div></div>
+      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">State &amp; Federal Hiring</span><span class="skill-val">95%</span></div><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div></div>
+      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">Team Leadership &amp; Mentoring</span><span class="skill-val">94%</span></div><div class="skill-bar"><div class="skill-fill" data-w="94"></div></div></div>
+      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">Account &amp; Client Management</span><span class="skill-val">92%</span></div><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></div>
+      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">Performance Management (KRA/KPI)</span><span class="skill-val">88%</span></div><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></div>
+      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">Training &amp; Development</span><span class="skill-val">86%</span></div><div class="skill-bar"><div class="skill-fill" data-w="86"></div></div></div>
+      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">ATS / VMS Platforms</span><span class="skill-val">90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
+      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">Revenue &amp; Business Development</span><span class="skill-val">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION + CERT -->
+<section id="education" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Education &amp; credentials</span>
+      <h2 class="section-title">The foundation.</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="panel reveal">
+        <h3>Academic qualifications</h3>
+        <div class="edu-item"><div class="deg">MBA — HR &amp; Marketing Management</div><div class="inst">Berhampur University</div></div>
+        <div class="edu-item"><div class="deg">B.Tech — Computer Science &amp; Engineering</div><div class="inst">National Institute of Science &amp; Technology, Berhampur · BPUT</div></div>
+        <div class="edu-item"><div class="deg">Intermediate</div><div class="inst">Sarada Junior College · Andhra Pradesh Board</div></div>
+        <div class="edu-item"><div class="deg">Schooling</div><div class="inst">Kendriya Vidyalaya · CBSE</div></div>
+      </div>
+      <div class="panel reveal d1">
+        <h3>Certification</h3>
+        <span class="cert-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"/></svg>
+          CHRMP · Advance
+        </span>
+        <p class="cert-detail">Certified Human Resource Management Professional<br/><span>Ripples Learning Services, Chennai · Jan – Apr 2016</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND WORK -->
+<section id="beyond" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Beyond work</span>
+      <h2 class="section-title">The person behind the pipeline.</h2>
+    </div>
+    <div class="beyond-grid">
+      <div class="beyond-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Cyclone Phailin, 2013</h3>
+        <p>Served as an authorised coordinator for the Government of Odisha during public evacuation efforts — recognised with an award for the service.</p>
+      </div>
+      <div class="beyond-card reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-1.25 2.5-2.5 3.5-2.5S7.75 22 9 22s2.25-2.5 3.5-2.5S15.75 22 17 22s2.25-2.5 3.5-2.5S22 22 22 22"/><path d="M11 3a8 8 0 0 1 8 8c0 1-3 3-8 3s-8-2-8-3a8 8 0 0 1 8-8z"/></svg></div>
+        <h3>Community campaigns</h3>
+        <p>Organised public road shows for "Green India, Clean India" and "Save Tiger" — turning recruiting energy toward causes.</p>
+      </div>
+      <div class="beyond-card reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.5 3 2.5 17 0 20M12 2c-2.5 3-2.5 17 0 20"/></svg></div>
+        <h3>Athlete &amp; competitor</h3>
+        <p>State-level basketball player and a professional kickboxer — the discipline and drive carry straight into the work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" style="justify-content:center;">Let's talk</span>
+      <h2 style="margin-top:18px;">Building a team or<br/>filling a hard role? <span class="grad">Let's connect.</span></h2>
+      <p>Open to recruitment leadership, account management and US staffing partnerships. Reach out directly.</p>
+    </div>
+    <div class="contact-methods reveal d1">
+      <a class="contact-card" href="mailto:naveenkumar05@hotmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        <span><span class="cc-label">Email</span><br/><span class="cc-val">naveenkumar05@hotmail.com</span></span>
+      </a>
+      <a class="contact-card" href="tel:+917077648106">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span><span class="cc-label">Phone</span><br/><span class="cc-val">+91 70776 48106</span></span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/savvana-naveen-kumar-b21396101" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <span><span class="cc-label">LinkedIn</span><br/><span class="cc-val">View profile</span></span>
+      </a>
+    </div>
+    <footer>
+      <span class="fnote">© 2026 · Savvana Naveen Kumar</span>
+      <span class="fnote">Recruitment &amp; Staffing Leadership · IN</span>
+    </footer>
+  </div>
+</section>
+
+<script>
+  /* ===== THEME TOGGLE (in-memory; respects system preference at load) ===== */
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    root.setAttribute('data-theme', 'light');
+  }
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+  });
+
+  /* ===== NAV scrolled state ===== */
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 30);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ===== CLIENT MARQUEE (built from resume client list) ===== */
+  const govClients = ['State of Massachusetts','State of Washington','State of Kansas','State of Vermont','State of Iowa','CalPERS','LAUSD','Houston ISD','Miami-Dade Schools','City of Boston','City of San Diego','Oakland County, MI','County of Santa Clara','City of Sunnyvale','Golden Gate Bridge District','Metropolitan Water District','City of Anaheim','WAHBE','University of Iowa','WA Gambling Commission'];
+  const entClients = ['Capital One','CVS Health','Morgan Stanley','GDIT','Tech Mahindra','Cognizant','Infosys','LG&E','LTI','State of NE','State of OR','State of GA','State of VA','State of TX','State of CA','State of NY','State of NJ','State of FL'];
+
+  function buildTrack(el, list, fed) {
+    const make = name => {
+      const d = document.createElement('span');
+      d.className = 'client-pill' + (fed ? ' fed' : '');
+      d.innerHTML = '<span class="pin"></span>' + name;
+      return d;
+    };
+    // duplicate the list for a seamless loop
+    [...list, ...list].forEach(n => el.appendChild(make(n)));
+  }
+  buildTrack(document.getElementById('mq1'), govClients, true);
+  buildTrack(document.getElementById('mq2'), entClients, false);
+
+  /* ===== REVEAL ON SCROLL ===== */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('show');
+        if (e.target.classList.contains('job')) e.target.classList.add('in-view');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ===== SKILL BARS ===== */
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.width = e.target.dataset.w + '%';
+        skillObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.skill-fill').forEach(el => skillObserver.observe(el));
+
+  /* ===== COUNTERS ===== */
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = +el.dataset.count;
+      const suffix = el.dataset.suffix || '';
+      const dur = 1400; const start = performance.now();
+      const tick = now => {
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(eased * target) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      countObserver.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('.stat-num').forEach(el => countObserver.observe(el));
+
+  /* ===== TIMELINE PROGRESS LINE ===== */
+  const timeline = document.getElementById('timeline');
+  const tlProgress = document.getElementById('tlProgress');
+  function updateTimeline() {
+    if (!timeline) return;
+    const r = timeline.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const total = r.height;
+    const passed = Math.min(Math.max(vh * 0.5 - r.top, 0), total);
+    tlProgress.style.height = passed + 'px';
+  }
+  window.addEventListener('scroll', updateTimeline, { passive: true });
+  updateTimeline();
+
+  /* ===== HERO NETWORK CANVAS (talent-connection motif) ===== */
+  const canvas = document.getElementById('net-canvas');
+  const ctx = canvas.getContext('2d');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let nodes = [], w = 0, h = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  let mouse = { x: -9999, y: -9999 };
+
+  function cssVar(name) {
+    return getComputedStyle(root).getPropertyValue(name).trim();
+  }
+
+  function resize() {
+    const hero = document.querySelector('.hero');
+    w = hero.clientWidth; h = hero.clientHeight;
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const count = Math.min(Math.floor(w * h / 16000), 90);
+    nodes = [];
+    for (let i = 0; i < count; i++) {
+      nodes.push({
+        x: Math.random() * w, y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
+        r: Math.random() * 1.8 + 1
+      });
+    }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    const lineColor = cssVar('--net-line');
+    const dotColor = cssVar('--net-dot');
+    for (let i = 0; i < nodes.length; i++) {
+      const n = nodes[i];
+      n.x += n.vx; n.y += n.vy;
+      if (n.x < 0 || n.x > w) n.vx *= -1;
+      if (n.y < 0 || n.y > h) n.vy *= -1;
+      // mouse attraction (subtle)
+      const mdx = mouse.x - n.x, mdy = mouse.y - n.y;
+      const md = Math.hypot(mdx, mdy);
+      if (md < 160) { n.x += mdx * 0.002; n.y += mdy * 0.002; }
+      for (let j = i + 1; j < nodes.length; j++) {
+        const m = nodes[j];
+        const dx = n.x - m.x, dy = n.y - m.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist < 130) {
+          ctx.globalAlpha = (1 - dist / 130) * 0.9;
+          ctx.strokeStyle = lineColor;
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(n.x, n.y); ctx.lineTo(m.x, m.y); ctx.stroke();
+        }
+      }
+    }
+    ctx.globalAlpha = 1;
+    for (const n of nodes) {
+      ctx.fillStyle = dotColor;
+      ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
+    }
+    if (!reduceMotion) requestAnimationFrame(draw);
+  }
+
+  const hero = document.querySelector('.hero');
+  hero.addEventListener('mousemove', (e) => {
+    const rect = hero.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left; mouse.y = e.clientY - rect.top;
+  });
+  hero.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+
+  resize();
+  window.addEventListener('resize', resize);
+  if (reduceMotion) { draw(); } else { requestAnimationFrame(draw); }
+</script>
+</body>
+</html>
