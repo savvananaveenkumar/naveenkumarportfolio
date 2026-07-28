@@ -3,63 +3,87 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Savvana Naveen Kumar — Recruitment & Staffing Leader</title>
+<title>Naveen Kumar Savvana — Executive Talent Acquisition Leader</title>
+<meta name="description" content="Portfolio of Naveen Kumar Savvana, Executive Talent Acquisition Leader with 18 years of expertise in US &amp; India staffing, operations, AI recruiting, and public sector hiring." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
 <style>
-  /* ============ THEME TOKENS ============ */
+  /* ==========================================================================
+     FUTURISTIC DESIGN SYSTEM — NEON AMBER + CYAN SCI-FI PALETTE
+     ========================================================================== */
   :root {
-    --font-display: 'Space Grotesk', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-    --maxw: 1140px;
-    --ease: cubic-bezier(0.22, 1, 0.36, 1);
-    --radius: 18px;
+    --maxw: 1200px;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-expo: cubic-bezier(0.87, 0, 0.13, 1);
+    --radius: 20px;
+    --radius-sm: 12px;
   }
 
   html[data-theme="dark"] {
-    --bg: #0A0E1A;
-    --bg-2: #0C1322;
-    --surface: #121A2E;
-    --surface-2: #18223F;
-    --border: rgba(255,255,255,0.08);
-    --border-strong: rgba(255,255,255,0.16);
-    --text: #EAEEF7;
-    --text-soft: #C2CADD;
-    --text-muted: #8A93AC;
-    --accent: #5B8CFF;
-    --accent-2: #2DD4BF;
-    --accent-3: #FBBF77;
-    --glow: rgba(91,140,255,0.22);
-    --net-line: rgba(120,160,255,0.16);
-    --net-dot: rgba(150,190,255,0.55);
-    --shadow: 0 24px 60px -24px rgba(0,0,0,0.7);
-    --grid-line: rgba(255,255,255,0.035);
+    --bg: #05070E;
+    --bg-2: #0A0E1A;
+    --surface: rgba(14, 20, 38, 0.7);
+    --surface-solid: #0E1426;
+    --surface-2: rgba(22, 32, 56, 0.6);
+    --surface-hover: rgba(36, 50, 82, 0.7);
+    --border: rgba(245, 158, 11, 0.10);
+    --border-strong: rgba(245, 158, 11, 0.25);
+    --text: #F0F4FF;
+    --text-soft: #B8C5DB;
+    --text-muted: #6B7A94;
+    --accent: #F59E0B;
+    --accent-hover: #D97706;
+    --accent-2: #F97316;
+    --accent-3: #FBBF24;
+    --cyan: #22D3EE;
+    --cyan-dim: rgba(34, 211, 238, 0.15);
+    --cyan-glow: rgba(34, 211, 238, 0.4);
+    --accent-light: rgba(245, 158, 11, 0.12);
+    --glow: rgba(245, 158, 11, 0.25);
+    --glow-strong: rgba(255, 159, 28, 0.5);
+    --net-line: rgba(245, 158, 11, 0.15);
+    --net-dot: rgba(251, 191, 36, 0.7);
+    --shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.8);
+    --card-glow: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(245, 158, 11, 0.08), transparent 40%);
+    --noise-opacity: 0.03;
   }
 
   html[data-theme="light"] {
-    --bg: #F3F6FC;
-    --bg-2: #EAF0F9;
-    --surface: #FFFFFF;
-    --surface-2: #F6F9FE;
-    --border: rgba(20,32,60,0.10);
-    --border-strong: rgba(20,32,60,0.18);
-    --text: #14203C;
-    --text-soft: #2E3A57;
-    --text-muted: #5E688A;
-    --accent: #2B5FE3;
-    --accent-2: #0E9C82;
-    --accent-3: #C2792A;
-    --glow: rgba(43,95,227,0.14);
-    --net-line: rgba(43,95,227,0.14);
-    --net-dot: rgba(43,95,227,0.45);
-    --shadow: 0 24px 50px -28px rgba(20,40,90,0.35);
-    --grid-line: rgba(20,32,60,0.04);
+    --bg: #FFFDF8;
+    --bg-2: #FFF8EB;
+    --surface: rgba(255, 255, 255, 0.8);
+    --surface-solid: #FFFFFF;
+    --surface-2: rgba(254, 243, 199, 0.6);
+    --surface-hover: rgba(253, 230, 138, 0.7);
+    --border: rgba(217, 119, 6, 0.15);
+    --border-strong: rgba(217, 119, 6, 0.30);
+    --text: #1E1B18;
+    --text-soft: #4A453E;
+    --text-muted: #78716C;
+    --accent: #D97706;
+    --accent-hover: #B45309;
+    --accent-2: #EA580C;
+    --accent-3: #CA8A04;
+    --cyan: #0891B2;
+    --cyan-dim: rgba(8, 145, 178, 0.1);
+    --cyan-glow: rgba(8, 145, 178, 0.25);
+    --accent-light: rgba(217, 119, 6, 0.1);
+    --glow: rgba(217, 119, 6, 0.16);
+    --glow-strong: rgba(234, 88, 12, 0.3);
+    --net-line: rgba(217, 119, 6, 0.15);
+    --net-dot: rgba(217, 119, 6, 0.55);
+    --shadow: 0 20px 45px -20px rgba(180, 83, 9, 0.2);
+    --card-glow: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(217, 119, 6, 0.06), transparent 40%);
+    --noise-opacity: 0.015;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
 
   body {
@@ -69,488 +93,1314 @@
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    transition: background 0.5s var(--ease), color 0.5s var(--ease);
+    transition: background 0.6s var(--ease), color 0.6s var(--ease);
   }
 
-  ::selection { background: var(--accent); color: #fff; }
+  /* Noise texture overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: var(--noise-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px 200px;
+  }
 
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-3), var(--accent), var(--accent-2));
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+  ::selection { background: var(--accent); color: #000; }
   a { color: inherit; text-decoration: none; }
+  button { border: none; background: none; font: inherit; cursor: pointer; color: inherit; }
 
   .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
 
+  /* ==========================================================================
+     LOADING SCREEN
+     ========================================================================== */
+  #loader {
+    position: fixed; inset: 0; z-index: 10000;
+    background: var(--bg);
+    display: grid; place-items: center;
+    transition: opacity 0.8s var(--ease), visibility 0.8s;
+  }
+  #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+  .loader-content { text-align: center; }
+  .loader-mark {
+    width: 80px; height: 80px; border-radius: 20px; margin: 0 auto 24px;
+    background: linear-gradient(135deg, var(--accent-3), var(--accent), var(--accent-2));
+    display: grid; place-items: center;
+    font-family: var(--font-display); font-weight: 800; font-size: 28px; color: #000;
+    animation: loaderPulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 60px var(--glow-strong), 0 0 120px var(--glow);
+  }
+  .loader-bar {
+    width: 200px; height: 3px; border-radius: 100px;
+    background: var(--surface-2); overflow: hidden; margin: 0 auto;
+  }
+  .loader-fill {
+    height: 100%; width: 0; border-radius: 100px;
+    background: linear-gradient(90deg, var(--accent-3), var(--accent), var(--accent-2));
+    animation: loaderFill 1.8s var(--ease) forwards;
+  }
+  @keyframes loaderPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 60px var(--glow-strong), 0 0 120px var(--glow); }
+    50% { transform: scale(1.08); box-shadow: 0 0 80px var(--glow-strong), 0 0 160px var(--glow); }
+  }
+  @keyframes loaderFill { to { width: 100%; } }
+
+  /* ==========================================================================
+     AMBIENT FLOATING PARTICLES (Full page)
+     ========================================================================== */
+  #ambient-particles {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  }
+
+  /* Cursor Glow */
+  #cursor-glow {
+    position: fixed; width: 400px; height: 400px; border-radius: 50%;
+    background: radial-gradient(circle, var(--glow) 0%, transparent 70%);
+    pointer-events: none; z-index: 1;
+    transform: translate(-50%, -50%);
+    opacity: 0; transition: opacity 0.4s;
+    mix-blend-mode: screen;
+    filter: blur(10px);
+  }
+  body:hover #cursor-glow { opacity: 0.5; }
+
+  /* ==========================================================================
+     EYEBROW & SECTION TITLES
+     ========================================================================== */
   .eyebrow {
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 600;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--cyan);
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
   .eyebrow::before {
     content: "";
-    width: 28px; height: 1px;
-    background: var(--accent);
+    width: 32px; height: 2px;
+    background: linear-gradient(90deg, var(--cyan), var(--accent));
+    border-radius: 2px;
     display: inline-block;
   }
 
   h2.section-title {
     font-family: var(--font-display);
-    font-weight: 600;
-    font-size: clamp(28px, 4.5vw, 46px);
+    font-weight: 700;
+    font-size: clamp(30px, 4.8vw, 50px);
     line-height: 1.08;
-    letter-spacing: -0.02em;
-    margin: 16px 0 0;
+    letter-spacing: -0.025em;
+    margin: 14px 0 0;
   }
 
-  /* ============ NAV ============ */
+  .grad-text {
+    background: linear-gradient(135deg, var(--accent-3) 0%, var(--accent) 40%, var(--accent-2) 70%, var(--cyan) 100%);
+    background-size: 200% 200%;
+    animation: gradShift 6s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @keyframes gradShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* ==========================================================================
+     NAVIGATION BAR — Glassmorphism
+     ========================================================================== */
   nav {
     position: fixed; top: 0; left: 0; right: 0;
     z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 16px 28px;
-    backdrop-filter: blur(14px);
-    background: color-mix(in srgb, var(--bg) 72%, transparent);
+    padding: 18px 32px;
+    backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8);
+    background: color-mix(in srgb, var(--bg) 60%, transparent);
     border-bottom: 1px solid transparent;
-    transition: border-color 0.4s var(--ease), background 0.4s var(--ease), padding 0.4s var(--ease);
+    transition: all 0.5s var(--ease);
   }
-  nav.scrolled { border-bottom-color: var(--border); padding: 12px 28px; }
+  nav.scrolled {
+    border-bottom-color: var(--border);
+    padding: 12px 32px;
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5), 0 0 1px var(--border-strong);
+  }
   .nav-brand {
     font-family: var(--font-display);
-    font-weight: 600; font-size: 16px;
+    font-weight: 700; font-size: 17px;
     letter-spacing: -0.01em;
-    display: flex; align-items: center; gap: 11px;
+    display: flex; align-items: center; gap: 12px;
   }
   .nav-mark {
-    width: 34px; height: 34px; border-radius: 10px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    width: 38px; height: 38px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent-3), var(--accent), var(--accent-2));
     display: grid; place-items: center;
-    color: #fff; font-weight: 700; font-size: 15px;
-    box-shadow: 0 6px 18px -6px var(--glow);
+    color: #000; font-weight: 800; font-size: 16px;
+    box-shadow: 0 6px 20px -4px var(--glow-strong);
+    transition: transform 0.4s var(--ease-bounce), box-shadow 0.4s;
+    position: relative;
   }
-  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-mark::after {
+    content: ""; position: absolute; inset: -3px; border-radius: 14px;
+    background: conic-gradient(from 0deg, var(--accent-3), var(--accent), var(--accent-2), var(--cyan), var(--accent-3));
+    z-index: -1; opacity: 0; transition: opacity 0.4s;
+    animation: rotateBorder 4s linear infinite;
+  }
+  .nav-brand:hover .nav-mark { transform: scale(1.1) rotate(5deg); box-shadow: 0 8px 30px -4px var(--glow-strong); }
+  .nav-brand:hover .nav-mark::after { opacity: 1; }
+  @keyframes rotateBorder { to { transform: rotate(360deg); } }
+
+  .nav-links { display: flex; gap: 32px; align-items: center; }
   .nav-links a {
-    font-size: 14px; color: var(--text-soft); position: relative;
+    font-size: 14.5px; font-weight: 500; color: var(--text-muted); position: relative;
+    padding: 4px 0;
     transition: color 0.3s var(--ease);
   }
   .nav-links a::after {
-    content: ""; position: absolute; left: 0; bottom: -5px;
-    width: 0; height: 1.5px; background: var(--accent);
-    transition: width 0.3s var(--ease);
+    content: ""; position: absolute; left: 0; bottom: -2px;
+    width: 0; height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--cyan));
+    border-radius: 2px;
+    transition: width 0.4s var(--ease);
+    box-shadow: 0 0 10px var(--glow);
   }
-  .nav-links a:hover { color: var(--text); }
-  .nav-links a:hover::after { width: 100%; }
+  .nav-links a:hover, .nav-links a.active { color: var(--text); }
+  .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+  .nav-actions { display: flex; align-items: center; gap: 14px; }
 
   .theme-toggle {
-    width: 46px; height: 46px; border-radius: 12px;
+    width: 44px; height: 44px; border-radius: 12px;
     border: 1px solid var(--border-strong);
     background: var(--surface);
-    color: var(--text); cursor: pointer;
+    backdrop-filter: blur(12px);
+    color: var(--accent); cursor: pointer;
     display: grid; place-items: center;
-    transition: transform 0.4s var(--ease), background 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s var(--ease-bounce), background 0.3s, border-color 0.3s, box-shadow 0.3s;
   }
-  .theme-toggle:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .theme-toggle:hover {
+    transform: translateY(-2px) scale(1.05);
+    border-color: var(--cyan);
+    box-shadow: 0 0 20px var(--cyan-dim);
+  }
   .theme-toggle svg { width: 20px; height: 20px; }
   .theme-toggle .moon { display: none; }
   html[data-theme="dark"] .theme-toggle .sun { display: none; }
   html[data-theme="dark"] .theme-toggle .moon { display: block; }
 
-  .nav-menu-btn { display: none; }
+  .mobile-menu-btn {
+    display: none; width: 44px; height: 44px; border-radius: 12px;
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--text); place-items: center; cursor: pointer;
+    backdrop-filter: blur(12px);
+  }
+  .mobile-menu-btn svg { width: 22px; height: 22px; }
 
-  /* ============ HERO ============ */
+  /* ==========================================================================
+     HERO SECTION — Cinematic
+     ========================================================================== */
+  .hero-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.28;
+    transition: opacity 0.6s var(--ease);
+  }
+  html[data-theme="light"] .hero-video-bg {
+    opacity: 0.12;
+    filter: grayscale(40%) contrast(90%);
+  }
+
   header.hero {
     position: relative;
-    min-height: 100svh;
+    min-height: 100vh;
     display: flex; align-items: center;
     overflow: hidden;
-    padding: 120px 0 60px;
+    padding: 130px 0 80px;
   }
+  /* Animated gradient mesh background */
+  .hero-mesh {
+    position: absolute; inset: 0; z-index: 1;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 40%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse 60% 80% at 80% 20%, rgba(34, 211, 238, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 70% 50% at 60% 80%, rgba(249, 115, 22, 0.06) 0%, transparent 50%);
+    animation: meshMove 20s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+  @keyframes meshMove {
+    0% { transform: scale(1) translate(0, 0); }
+    33% { transform: scale(1.05) translate(-2%, 3%); }
+    66% { transform: scale(0.98) translate(3%, -2%); }
+    100% { transform: scale(1.03) translate(-1%, 1%); }
+  }
+
   #net-canvas {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
-    z-index: 0;
+    z-index: 2;
+    pointer-events: auto;
   }
-  .hero-glow {
-    position: absolute; z-index: 0;
-    width: 60vw; height: 60vw; max-width: 720px; max-height: 720px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--glow), transparent 68%);
-    top: -10%; right: -10%;
-    filter: blur(20px);
-    pointer-events: none;
-  }
-  .hero-inner { position: relative; z-index: 2; max-width: 860px; }
-  .hero-status {
-    display: inline-flex; align-items: center; gap: 9px;
-    font-family: var(--font-mono); font-size: 12.5px;
-    letter-spacing: 0.06em;
-    padding: 7px 15px; border-radius: 100px;
+
+  /* Floating geometric shapes */
+  .geo-shape {
+    position: absolute; z-index: 2; pointer-events: none;
     border: 1px solid var(--border-strong);
-    background: color-mix(in srgb, var(--surface) 60%, transparent);
-    color: var(--text-soft);
-    backdrop-filter: blur(8px);
+    opacity: 0.15;
   }
-  .hero-status .dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--accent-2);
-    box-shadow: 0 0 0 0 var(--accent-2);
-    animation: pulse 2.4s infinite;
+  .geo-hex {
+    width: 120px; height: 120px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: linear-gradient(135deg, var(--accent-light), transparent);
+    border: none;
+    top: 15%; right: 12%;
+    animation: floatSpin 25s linear infinite;
   }
-  @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent-2) 70%, transparent); }
-    70% { box-shadow: 0 0 0 9px transparent; }
+  .geo-ring {
+    width: 200px; height: 200px; border-radius: 50%;
+    border: 1px solid var(--accent-light);
+    bottom: 20%; right: 8%;
+    animation: floatSpin 35s linear infinite reverse;
+  }
+  .geo-diamond {
+    width: 60px; height: 60px;
+    transform: rotate(45deg);
+    border-color: var(--cyan-dim);
+    background: var(--cyan-dim);
+    top: 30%; left: 8%;
+    animation: floatUpDown 8s ease-in-out infinite;
+  }
+  .geo-cross {
+    width: 80px; height: 80px;
+    top: 60%; left: 15%;
+    border: none; opacity: 0.1;
+  }
+  .geo-cross::before, .geo-cross::after {
+    content: ""; position: absolute;
+    background: linear-gradient(90deg, var(--accent-3), transparent);
+  }
+  .geo-cross::before { width: 100%; height: 1px; top: 50%; }
+  .geo-cross::after { height: 100%; width: 1px; left: 50%; }
+  @keyframes floatSpin { to { transform: rotate(360deg); } }
+  @keyframes floatUpDown {
+    0%, 100% { transform: rotate(45deg) translateY(0); }
+    50% { transform: rotate(45deg) translateY(-30px); }
+  }
+
+  .hero-glow-1 {
+    position: absolute; z-index: 0;
+    width: 55vw; height: 55vw; max-width: 700px; max-height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--glow-strong), transparent 70%);
+    top: -15%; right: -10%;
+    filter: blur(60px);
+    pointer-events: none;
+    opacity: 0.5;
+    animation: floatGlow 12s ease-in-out infinite alternate;
+  }
+  .hero-glow-2 {
+    position: absolute; z-index: 0;
+    width: 40vw; height: 40vw; max-width: 500px; max-height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.12), transparent 70%);
+    bottom: -10%; left: -10%;
+    filter: blur(70px);
+    pointer-events: none;
+    animation: floatGlow2 15s ease-in-out infinite alternate;
+  }
+  @keyframes floatGlow {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-30px, 40px) scale(1.15); }
+  }
+  @keyframes floatGlow2 {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(20px, -30px) scale(1.1); }
+  }
+
+  .hero-inner { position: relative; z-index: 2; max-width: 920px; }
+
+  .badge-status {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--font-mono); font-size: 13px; font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 8px 18px; border-radius: 100px;
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 24px -6px var(--glow), inset 0 0 0 0.5px rgba(255,255,255,0.05);
+  }
+  .badge-status .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent), 0 0 24px var(--glow);
+    animation: pulseAmber 2s infinite;
+  }
+  @keyframes pulseAmber {
+    0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.8); }
+    70% { box-shadow: 0 0 0 10px transparent; }
     100% { box-shadow: 0 0 0 0 transparent; }
   }
+
   .hero h1 {
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: clamp(42px, 8vw, 88px);
-    line-height: 0.98;
-    letter-spacing: -0.035em;
-    margin: 22px 0 0;
+    font-size: clamp(42px, 7.5vw, 84px);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    margin: 24px 0 0;
   }
-  .hero h1 .grad {
-    background: linear-gradient(115deg, var(--accent), var(--accent-2));
-    -webkit-background-clip: text; background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+
+  /* Typing cursor for role text */
   .hero-role {
     font-family: var(--font-mono);
-    font-size: clamp(14px, 2vw, 18px);
-    color: var(--text-soft);
-    margin-top: 20px;
-    letter-spacing: 0.02em;
+    font-size: clamp(14px, 1.8vw, 18px);
+    color: var(--cyan);
+    margin-top: 18px;
+    font-weight: 500;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+    min-height: 2em;
   }
-  .hero-role .sep { color: var(--accent); margin: 0 8px; }
+  .hero-role .sep { color: var(--border-strong); }
+  #typed-role { border-right: 2px solid var(--cyan); padding-right: 4px; animation: blink 1s step-end infinite; }
+  @keyframes blink { 50% { border-color: transparent; } }
+
   .hero-lede {
-    font-size: clamp(16px, 2vw, 19px);
+    font-size: clamp(16px, 1.9vw, 20px);
     color: var(--text-soft);
-    max-width: 620px;
-    margin-top: 22px;
+    max-width: 760px;
+    margin-top: 24px;
+    line-height: 1.6;
   }
-  .hero-cta { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+
+  .hero-cta { display: flex; gap: 16px; margin-top: 38px; flex-wrap: wrap; align-items: center; }
+
+  /* ==========================================================================
+     BUTTON STYLES — with ripple & magnetic effect
+     ========================================================================== */
   .btn {
-    font-family: var(--font-body); font-weight: 600; font-size: 15px;
-    padding: 14px 26px; border-radius: 12px; cursor: pointer;
+    font-family: var(--font-body); font-weight: 600; font-size: 15.5px;
+    padding: 15px 30px; border-radius: 14px; cursor: pointer;
     border: 1px solid transparent;
-    display: inline-flex; align-items: center; gap: 10px;
-    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.3s, border-color 0.3s;
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    transition: transform 0.35s var(--ease-bounce), box-shadow 0.35s var(--ease), background 0.3s, border-color 0.3s;
+    position: relative; overflow: hidden;
   }
-  .btn svg { width: 18px; height: 18px; }
+  .btn svg { width: 19px; height: 19px; transition: transform 0.3s var(--ease); }
+
+  /* Ripple effect */
+  .btn .ripple {
+    position: absolute; border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    transform: scale(0); animation: rippleAnim 0.6s ease-out forwards;
+    pointer-events: none;
+  }
+  @keyframes rippleAnim { to { transform: scale(4); opacity: 0; } }
+
   .btn-primary {
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    color: #fff;
-    box-shadow: 0 14px 34px -12px var(--glow);
+    background: linear-gradient(135deg, var(--accent-3), var(--accent), var(--accent-2));
+    color: #000; font-weight: 700;
+    box-shadow: 0 14px 35px -10px var(--glow-strong), 0 0 0 0 transparent;
   }
-  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -12px var(--glow); }
+  .btn-primary::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.25) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s var(--ease);
+  }
+  .btn-primary:hover::before { transform: translateX(100%); }
+  .btn-primary:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 20px 50px -10px var(--glow-strong), 0 0 30px -5px var(--glow);
+  }
+  .btn-primary:hover svg { transform: translateX(3px); }
+
   .btn-ghost {
-    background: transparent; color: var(--text);
+    background: var(--surface); color: var(--text);
     border-color: var(--border-strong);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    backdrop-filter: blur(12px);
   }
-  .btn-ghost:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .btn-ghost:hover {
+    transform: translateY(-4px);
+    border-color: var(--cyan);
+    color: var(--cyan);
+    background: var(--surface-hover);
+    box-shadow: 0 10px 30px -10px var(--cyan-glow), 0 0 0 1px var(--cyan-dim);
+  }
 
   .scroll-hint {
     position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
     z-index: 2;
-    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.22em;
     text-transform: uppercase; color: var(--text-muted);
     display: flex; flex-direction: column; align-items: center; gap: 10px;
   }
   .scroll-hint .line {
-    width: 1px; height: 38px;
-    background: linear-gradient(var(--accent), transparent);
-    animation: scrolldown 2s infinite;
+    width: 2px; height: 40px; border-radius: 2px;
+    background: linear-gradient(var(--cyan), transparent);
+    animation: scrolldown 2.2s infinite;
   }
-  @keyframes scrolldown { 0%,100%{opacity:.3; transform:scaleY(.7) translateY(-4px);} 50%{opacity:1; transform:scaleY(1) translateY(0);} }
+  @keyframes scrolldown {
+    0%, 100% { opacity: 0.3; transform: scaleY(0.6) translateY(-6px); }
+    50% { opacity: 1; transform: scaleY(1) translateY(0); }
+  }
 
-  /* ============ STATS STRIP ============ */
+  /* ==========================================================================
+     STATS HIGHLIGHT STRIP
+     ========================================================================== */
   .stats {
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     background: var(--bg-2);
     position: relative; z-index: 3;
+    backdrop-filter: blur(10px);
   }
-  .stats-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+  /* Neon divider line */
+  .stats::before {
+    content: ""; position: absolute; top: -1px; left: 10%; right: 10%; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), var(--cyan), var(--accent), transparent);
+    z-index: 1;
   }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
   .stat {
-    padding: 40px 28px;
+    padding: 44px 28px;
     border-right: 1px solid var(--border);
-    transition: background 0.4s var(--ease);
+    transition: background 0.4s var(--ease), transform 0.3s var(--ease);
+    position: relative; overflow: hidden;
   }
   .stat:last-child { border-right: none; }
   .stat:hover { background: var(--surface); }
   .stat-num {
-    font-family: var(--font-display); font-weight: 700;
-    font-size: clamp(34px, 5vw, 52px); line-height: 1;
+    font-family: var(--font-display); font-weight: 800;
+    font-size: clamp(38px, 5.2vw, 58px); line-height: 1;
     letter-spacing: -0.03em;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px var(--glow);
   }
   .stat-label {
-    font-family: var(--font-mono); font-size: 12px;
+    font-family: var(--font-mono); font-size: 12.5px; font-weight: 500;
     color: var(--text-muted); margin-top: 12px;
-    letter-spacing: 0.04em; text-transform: uppercase;
+    letter-spacing: 0.05em; text-transform: uppercase;
   }
 
-  /* ============ SECTIONS ============ */
-  section { padding: 110px 0; position: relative; }
-  .section-head { margin-bottom: 56px; max-width: 720px; }
-  .section-head p { color: var(--text-muted); margin-top: 16px; font-size: 16.5px; }
+  /* ==========================================================================
+     SECTION COMMON STYLES
+     ========================================================================== */
+  section { padding: 120px 0; position: relative; }
+  .section-head { margin-bottom: 60px; max-width: 780px; }
+  .section-head p { color: var(--text-muted); margin-top: 16px; font-size: 17.5px; line-height: 1.6; }
 
-  /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: start; }
-  .about-text p { color: var(--text-soft); margin-bottom: 18px; font-size: 16.5px; }
-  .about-text strong { color: var(--text); font-weight: 600; }
-  .competency-card {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 30px;
+  /* Neon section dividers */
+  section::before {
+    content: ""; position: absolute; top: 0; left: 15%; right: 15%; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+  }
+
+  /* ==========================================================================
+     GLASS CARD — Holographic Shimmer + 3D Tilt
+     ========================================================================== */
+  .glass-card {
+    background: var(--surface);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
     box-shadow: var(--shadow);
+    transition: transform 0.5s var(--ease), border-color 0.5s var(--ease), box-shadow 0.5s var(--ease);
+    will-change: transform;
   }
+  /* Mouse-following glow */
+  .glass-card::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: var(--card-glow);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s var(--ease);
+  }
+  /* Holographic shimmer sweep */
+  .glass-card::after {
+    content: "";
+    position: absolute; inset: -50%;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      rgba(255,255,255,0.03) 45%,
+      rgba(255,255,255,0.06) 50%,
+      rgba(255,255,255,0.03) 55%,
+      transparent 60%
+    );
+    transform: translateX(-100%) rotate(0deg);
+    pointer-events: none;
+    transition: transform 0.8s var(--ease);
+  }
+  .glass-card:hover::before { opacity: 1; }
+  .glass-card:hover::after { transform: translateX(100%) rotate(0deg); }
+  .glass-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 25px 60px -15px var(--glow), 0 0 0 1px rgba(255,255,255,0.03);
+  }
+
+  /* ==========================================================================
+     ABOUT & COMPETENCIES SECTION
+     ========================================================================== */
+  .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr 1fr; gap: 32px; align-items: start; }
+  .about-text p { color: var(--text-soft); margin-bottom: 20px; font-size: 17px; line-height: 1.7; }
+  .about-text strong { color: var(--text); font-weight: 600; }
+
+  /* Profile Photo & Theme Sync Card */
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 26px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    position: relative;
+  }
+  .hud-glitch-text {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--cyan);
+    text-shadow: 0 0 8px var(--cyan-glow);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .avatar-frame-container {
+    position: relative;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  .avatar-frame {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--border-strong);
+    box-shadow: 0 0 25px var(--glow);
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  }
+  .avatar-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s;
+  }
+  .avatar-grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 15px 15px;
+    background-position: center;
+    pointer-events: none;
+    border-radius: 50%;
+  }
+  .scanline {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    box-shadow: 0 0 10px var(--cyan);
+    opacity: 0.8;
+    pointer-events: none;
+    animation: scanning 3.5s linear infinite;
+    z-index: 2;
+  }
+  @keyframes scanning {
+    0% { top: 0%; }
+    50% { top: 100%; }
+    100% { top: 0%; }
+  }
+  .hud-corner {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-color: var(--cyan);
+    border-style: solid;
+    opacity: 0.7;
+    pointer-events: none;
+    transition: border-color 0.4s var(--ease);
+  }
+  .hud-corner.top-left { top: 0; left: 0; border-width: 2px 0 0 2px; }
+  .hud-corner.top-right { top: 0; right: 0; border-width: 2px 2px 0 0; }
+  .hud-corner.bottom-left { bottom: 0; left: 0; border-width: 0 0 2px 2px; }
+  .hud-corner.bottom-right { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
+  
+  .profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .profile-actions .btn {
+    font-size: 13.5px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .hud-data-panel {
+    width: 100%;
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .hud-data-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hud-data-row .label {
+    color: var(--text-muted);
+  }
+  .hud-data-row .val {
+    color: var(--cyan);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px var(--cyan-glow);
+  }
+
+
   .competency-card h3 {
-    font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.16em;
-    text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px;
+    font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--cyan); margin-bottom: 22px;
+    display: flex; align-items: center; justify-content: space-between;
   }
-  .chips { display: flex; flex-wrap: wrap; gap: 9px; }
+  .chips-filter { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+  .chip-filter-btn {
+    font-family: var(--font-mono); font-size: 11.5px; padding: 4px 12px;
+    border-radius: 100px; border: 1px solid var(--border);
+    background: var(--surface-2); color: var(--text-muted);
+    transition: all 0.35s var(--ease);
+    backdrop-filter: blur(8px);
+  }
+  .chip-filter-btn.active, .chip-filter-btn:hover {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #000; border-color: transparent; font-weight: 600;
+    box-shadow: 0 4px 16px -4px var(--glow-strong);
+  }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
   .chip {
-    font-size: 13.5px; padding: 8px 14px; border-radius: 100px;
+    font-size: 14px; font-weight: 500; padding: 9px 16px; border-radius: 100px;
     background: var(--surface-2); border: 1px solid var(--border);
     color: var(--text-soft);
-    transition: transform 0.3s var(--ease), border-color 0.3s, color 0.3s, background 0.3s;
+    backdrop-filter: blur(8px);
+    transition: transform 0.35s var(--ease-bounce), border-color 0.35s, color 0.35s, background 0.35s, box-shadow 0.35s;
     cursor: default;
+    display: inline-flex; align-items: center; gap: 8px;
   }
+  .chip svg { width: 14px; height: 14px; color: var(--accent); flex-shrink: 0; }
   .chip:hover {
-    transform: translateY(-2px); border-color: var(--accent);
-    color: var(--text); background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+    transform: translateY(-4px) scale(1.04);
+    border-color: var(--cyan);
+    color: var(--text);
+    background: color-mix(in srgb, var(--cyan) 12%, var(--surface-solid));
+    box-shadow: 0 8px 24px -4px var(--cyan-glow);
   }
 
-  /* TIMELINE */
-  .timeline { position: relative; margin-top: 12px; }
+  /* ==========================================================================
+     TECH STACK & KPI ECOLOGY MATRIX
+     ========================================================================== */
+  .tech-matrix {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px;
+  }
+  .tech-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 26px;
+    backdrop-filter: blur(16px);
+    transition: transform 0.4s var(--ease), border-color 0.4s, box-shadow 0.4s;
+    position: relative; overflow: hidden;
+    will-change: transform;
+  }
+  /* Holographic shimmer on tech cards */
+  .tech-card::after {
+    content: "";
+    position: absolute; inset: -50%;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      rgba(255,255,255,0.03) 45%,
+      rgba(255,255,255,0.06) 50%,
+      rgba(255,255,255,0.03) 55%,
+      transparent 60%
+    );
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: transform 0.7s var(--ease);
+  }
+  .tech-card:hover::after { transform: translateX(100%); }
+  .tech-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 50px -12px var(--glow), 0 0 0 1px var(--border-strong);
+  }
+  .tech-card .icon-box {
+    width: 48px; height: 48px; border-radius: 14px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 15%, var(--surface-solid)), color-mix(in srgb, var(--cyan) 8%, var(--surface-solid)));
+    color: var(--accent-3); display: grid; place-items: center; margin-bottom: 18px;
+    border: 1px solid var(--border);
+  }
+  .tech-card .icon-box svg { width: 22px; height: 22px; }
+  .tech-card h3 { font-family: var(--font-display); font-size: 19px; font-weight: 600; margin-bottom: 10px; }
+  .tech-card p { font-size: 14.5px; color: var(--text-muted); margin-bottom: 16px; }
+  .tech-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+  .tech-badge {
+    font-family: var(--font-mono); font-size: 12px; padding: 4px 10px; border-radius: 6px;
+    background: var(--surface-2); border: 1px solid var(--border); color: var(--text-soft);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s var(--ease);
+  }
+  .tech-badge:hover { border-color: var(--accent); color: var(--accent-3); transform: translateY(-2px); }
+  .tech-badge.highlight { color: var(--cyan); border-color: var(--cyan-dim); }
+
+  /* ==========================================================================
+     EXPERIENCE TIMELINE
+     ========================================================================== */
+  .timeline-filters { display: flex; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; }
+  .filter-btn {
+    font-family: var(--font-mono); font-size: 12.5px; font-weight: 500;
+    padding: 8px 18px; border-radius: 100px;
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--text-muted); transition: all 0.35s var(--ease);
+    backdrop-filter: blur(8px);
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: linear-gradient(135deg, var(--accent-3), var(--accent));
+    color: #000; border-color: transparent; font-weight: 600;
+    box-shadow: 0 6px 24px -4px var(--glow-strong);
+  }
+
+  .timeline { position: relative; margin-top: 10px; }
   .timeline::before {
-    content: ""; position: absolute; left: 19px; top: 6px; bottom: 6px;
+    content: ""; position: absolute; left: 23px; top: 10px; bottom: 10px;
     width: 2px; background: var(--border);
   }
   .timeline-progress {
-    position: absolute; left: 19px; top: 6px; width: 2px;
-    background: linear-gradient(var(--accent), var(--accent-2));
-    height: 0; transition: height 0.1s linear;
+    position: absolute; left: 23px; top: 10px; width: 2px;
+    background: linear-gradient(var(--accent-3), var(--accent), var(--cyan));
+    height: 0; transition: height 0.15s linear;
+    box-shadow: 0 0 12px var(--glow), 0 0 24px var(--glow);
   }
-  .job { position: relative; padding-left: 64px; padding-bottom: 48px; }
+
+  .job { position: relative; padding-left: 70px; padding-bottom: 56px; transition: opacity 0.4s, transform 0.4s; }
   .job:last-child { padding-bottom: 0; }
+  .job.hidden { display: none; }
+
   .job-node {
-    position: absolute; left: 10px; top: 4px;
-    width: 20px; height: 20px; border-radius: 50%;
-    background: var(--bg); border: 2px solid var(--border-strong);
-    z-index: 2; transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+    position: absolute; left: 13px; top: 6px;
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--bg); border: 2.5px solid var(--border-strong);
+    z-index: 2; transition: all 0.5s var(--ease);
   }
-  .job.in-view .job-node { border-color: var(--accent); box-shadow: 0 0 0 6px var(--glow); }
+  .job.in-view .job-node {
+    border-color: var(--cyan);
+    background: var(--accent-3);
+    box-shadow: 0 0 0 8px var(--glow-strong), 0 0 20px var(--glow);
+  }
+
   .job-card {
     background: var(--surface); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 26px 28px;
-    transition: transform 0.4s var(--ease), border-color 0.4s var(--ease), box-shadow 0.4s var(--ease);
+    border-radius: var(--radius); padding: 32px;
+    position: relative; overflow: hidden;
+    backdrop-filter: blur(16px);
+    transition: transform 0.5s var(--ease), border-color 0.5s var(--ease), box-shadow 0.5s var(--ease);
+    will-change: transform;
   }
-  .job-card:hover { transform: translateY(-4px); border-color: var(--border-strong); box-shadow: var(--shadow); }
-  .job-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
-  .job-title { font-family: var(--font-display); font-weight: 600; font-size: 21px; letter-spacing: -0.01em; }
+  .job-card::after {
+    content: "";
+    position: absolute; inset: -50%;
+    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.03) 55%, transparent 60%);
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: transform 0.7s var(--ease);
+  }
+  .job-card:hover::after { transform: translateX(100%); }
+  .job-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-strong);
+    box-shadow: 0 25px 60px -15px var(--glow), 0 0 0 1px rgba(255,255,255,0.03);
+  }
+
+  .job-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; }
+  .job-title { font-family: var(--font-display); font-weight: 700; font-size: 23px; letter-spacing: -0.01em; color: var(--text); }
   .job-date {
-    font-family: var(--font-mono); font-size: 12.5px; color: var(--accent);
-    white-space: nowrap; padding: 4px 11px; border-radius: 100px;
-    border: 1px solid var(--border); background: var(--surface-2);
+    font-family: var(--font-mono); font-size: 13px; color: var(--cyan); font-weight: 600;
+    white-space: nowrap; padding: 5px 14px; border-radius: 100px;
+    border: 1px solid var(--cyan-dim); background: color-mix(in srgb, var(--cyan) 8%, var(--surface-solid));
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 0 8px var(--cyan-dim);
   }
+
   .job-meta {
-    font-size: 14.5px; color: var(--text-muted); margin-top: 6px;
-    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    font-size: 15px; color: var(--text-muted); margin-top: 8px;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
   }
-  .job-meta .company { color: var(--text-soft); font-weight: 600; }
-  .job-bullets { list-style: none; margin-top: 18px; display: grid; gap: 11px; }
+  .job-meta .company { color: var(--accent); font-weight: 600; }
+  .job-meta .loc { font-family: var(--font-mono); font-size: 12.5px; }
+
+  .job-bullets { list-style: none; margin-top: 20px; display: grid; gap: 12px; }
   .job-bullets li {
-    position: relative; padding-left: 22px; font-size: 15px; color: var(--text-soft);
+    position: relative; padding-left: 24px; font-size: 15.5px; color: var(--text-soft); line-height: 1.65;
   }
   .job-bullets li::before {
-    content: ""; position: absolute; left: 0; top: 9px;
-    width: 7px; height: 7px; border-radius: 2px; transform: rotate(45deg);
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    content: ""; position: absolute; left: 0; top: 10px;
+    width: 8px; height: 8px; border-radius: 2px; transform: rotate(45deg);
+    background: linear-gradient(135deg, var(--accent-3), var(--cyan));
+    box-shadow: 0 0 8px var(--glow);
   }
-  .job-tags { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 7px; }
-  .tag-mini {
-    font-family: var(--font-mono); font-size: 11.5px; padding: 4px 10px;
-    border-radius: 7px; background: var(--surface-2); border: 1px solid var(--border);
-    color: var(--text-muted);
-  }
-  .tag-mini.is-tool { color: var(--accent-2); border-color: color-mix(in srgb, var(--accent-2) 30%, var(--border)); }
 
-  /* CLIENTS MARQUEE */
+  .job-section-subtitle {
+    font-family: var(--font-mono); font-size: 12px; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--cyan); margin-top: 20px; font-weight: 600;
+  }
+
+  .job-tags { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag-mini {
+    font-family: var(--font-mono); font-size: 12px; padding: 5px 12px;
+    border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text-soft);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s var(--ease);
+  }
+  .tag-mini:hover { transform: translateY(-2px); }
+  .tag-mini.is-tool { color: var(--cyan); border-color: var(--cyan-dim); }
+  .tag-mini.is-client { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+
+  /* ==========================================================================
+     CLIENTS & PARTNERS MARQUEE
+     ========================================================================== */
   .clients { background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-  .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
-  .marquee-track { display: flex; gap: 14px; width: max-content; animation: marquee 38s linear infinite; }
+  .clients::before { display: none; }
+  .marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  }
+  .marquee-track { display: flex; gap: 16px; width: max-content; animation: marquee 42s linear infinite; }
   .marquee:hover .marquee-track { animation-play-state: paused; }
-  .marquee.rev .marquee-track { animation-direction: reverse; animation-duration: 46s; margin-top: 14px; }
+  .marquee.rev .marquee-track { animation-direction: reverse; animation-duration: 50s; margin-top: 16px; }
   @keyframes marquee { to { transform: translateX(-50%); } }
+
   .client-pill {
-    font-size: 14px; padding: 11px 20px; border-radius: 12px;
+    font-size: 14.5px; padding: 12px 22px; border-radius: 14px;
     background: var(--surface); border: 1px solid var(--border);
     color: var(--text-soft); white-space: nowrap; font-weight: 500;
-    display: flex; align-items: center; gap: 9px;
+    display: flex; align-items: center; gap: 10px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: border-color 0.3s, transform 0.35s, box-shadow 0.3s;
   }
-  .client-pill .pin { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-  .client-pill.fed .pin { background: var(--accent-3); }
+  .client-pill:hover {
+    border-color: var(--accent);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 24px -6px var(--glow);
+  }
+  .client-pill .pin { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .client-pill.fed .pin { background: var(--cyan); box-shadow: 0 0 8px var(--cyan-glow); }
+  .client-pill.ind .pin { background: var(--accent-2); }
 
-  /* SKILLS */
-  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 64px; }
-  .skill-row { margin-bottom: 4px; }
-  .skill-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 11px; }
-  .skill-name { font-weight: 600; font-size: 16px; }
-  .skill-val { font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
-  .skill-bar { height: 7px; border-radius: 100px; background: var(--surface-2); border: 1px solid var(--border); overflow: hidden; }
+  /* ==========================================================================
+     EXPERTISE & SKILL BENCHMARKS — Neon Glow
+     ========================================================================== */
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px 60px; }
+  .skill-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+  .skill-name { font-weight: 600; font-size: 16.5px; }
+  .skill-val { font-family: var(--font-mono); font-size: 14px; color: var(--cyan); font-weight: 600; text-shadow: 0 0 10px var(--cyan-glow); }
+  .skill-bar { height: 10px; border-radius: 100px; background: var(--surface-2); border: 1px solid var(--border); overflow: hidden; position: relative; }
   .skill-fill {
     height: 100%; width: 0; border-radius: 100px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
-    transition: width 1.1s var(--ease);
+    background: linear-gradient(90deg, var(--accent-3), var(--accent), var(--cyan));
+    transition: width 1.4s var(--ease);
+    box-shadow: 0 0 14px var(--glow), 0 0 28px var(--glow);
+    position: relative;
   }
+  .skill-fill::after {
+    content: ""; position: absolute; right: 0; top: -2px; bottom: -2px;
+    width: 14px; border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 12px var(--cyan-glow), 0 0 24px var(--cyan-dim);
+    opacity: 0;
+    transition: opacity 0.5s 1.2s;
+  }
+  .skill-fill[style*="width"]::after { opacity: 1; }
 
-  /* EDUCATION + CERT */
-  .edu-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; }
+  /* ==========================================================================
+     EDUCATION & CREDENTIALS
+     ========================================================================== */
+  .edu-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; }
   .panel {
     background: var(--surface); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 32px;
+    border-radius: var(--radius); padding: 36px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(16px);
+    position: relative; overflow: hidden;
+    transition: transform 0.5s var(--ease), box-shadow 0.5s;
+    will-change: transform;
   }
-  .panel h3 { font-family: var(--font-display); font-size: 19px; font-weight: 600; margin-bottom: 22px; }
-  .edu-item { padding: 16px 0; border-bottom: 1px solid var(--border); }
+  .panel::after {
+    content: "";
+    position: absolute; inset: -50%;
+    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.03) 55%, transparent 60%);
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: transform 0.7s var(--ease);
+  }
+  .panel:hover::after { transform: translateX(100%); }
+  .panel:hover { box-shadow: 0 25px 60px -15px var(--glow); }
+  .panel h3 { font-family: var(--font-display); font-size: 21px; font-weight: 700; margin-bottom: 24px; color: var(--text); }
+  .edu-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
   .edu-item:last-child { border-bottom: none; padding-bottom: 0; }
-  .edu-item .deg { font-weight: 600; font-size: 16px; }
-  .edu-item .inst { color: var(--text-muted); font-size: 14px; margin-top: 3px; }
+  .edu-item .deg { font-weight: 700; font-size: 17px; color: var(--text); }
+  .edu-item .inst { color: var(--cyan); font-size: 14.5px; margin-top: 4px; font-weight: 500; }
+  .edu-item .details { color: var(--text-muted); font-size: 13.5px; margin-top: 2px; }
+
+  .cert-card {
+    background: var(--surface-2); border: 1px solid var(--border-strong);
+    border-radius: 14px; padding: 20px; margin-bottom: 16px;
+    backdrop-filter: blur(12px);
+    transition: transform 0.35s var(--ease), border-color 0.35s, box-shadow 0.35s;
+    position: relative; overflow: hidden;
+  }
+  .cert-card::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.03), transparent, rgba(34, 211, 238, 0.03));
+    pointer-events: none;
+  }
+  .cert-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--cyan);
+    box-shadow: 0 12px 30px -8px var(--cyan-glow);
+  }
   .cert-badge {
     display: inline-flex; align-items: center; gap: 8px;
-    font-family: var(--font-mono); font-size: 12px; color: var(--accent-2);
-    border: 1px solid color-mix(in srgb, var(--accent-2) 35%, var(--border));
-    background: color-mix(in srgb, var(--accent-2) 8%, var(--surface));
-    padding: 6px 12px; border-radius: 100px; margin-bottom: 18px;
+    font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--cyan);
+    border: 1px solid var(--cyan-dim);
+    background: color-mix(in srgb, var(--cyan) 8%, transparent);
+    padding: 5px 12px; border-radius: 100px; margin-bottom: 10px;
   }
-  .cert-detail { color: var(--text-soft); font-size: 15px; }
-  .cert-detail span { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+  .cert-card h4 { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+  .cert-card p { font-size: 13.5px; color: var(--text-muted); }
 
-  /* BEYOND WORK */
-  .beyond-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  /* ==========================================================================
+     BEYOND WORK / LEADERSHIP IMPACT
+     ========================================================================== */
+  .beyond-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .beyond-card {
     background: var(--surface); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 30px; position: relative; overflow: hidden;
-    transition: transform 0.4s var(--ease), border-color 0.4s;
+    border-radius: var(--radius); padding: 32px; position: relative; overflow: hidden;
+    backdrop-filter: blur(16px);
+    transition: transform 0.5s var(--ease), border-color 0.5s, box-shadow 0.5s;
+    will-change: transform;
   }
-  .beyond-card:hover { transform: translateY(-5px); border-color: var(--border-strong); }
+  .beyond-card::after {
+    content: "";
+    position: absolute; inset: -50%;
+    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.03) 55%, transparent 60%);
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: transform 0.7s var(--ease);
+  }
+  .beyond-card:hover::after { transform: translateX(100%); }
+  .beyond-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 25px 60px -15px var(--glow), 0 0 0 1px rgba(255,255,255,0.03);
+  }
   .beyond-card .ic {
-    width: 48px; height: 48px; border-radius: 13px; display: grid; place-items: center;
-    background: color-mix(in srgb, var(--accent) 14%, var(--surface));
-    color: var(--accent); margin-bottom: 20px;
+    width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 15%, var(--surface-solid)), color-mix(in srgb, var(--cyan) 8%, var(--surface-solid)));
+    color: var(--cyan); margin-bottom: 22px;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.4s;
   }
-  .beyond-card .ic svg { width: 24px; height: 24px; }
-  .beyond-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-bottom: 8px; }
-  .beyond-card p { color: var(--text-muted); font-size: 14.5px; }
+  .beyond-card:hover .ic { box-shadow: 0 0 20px var(--cyan-dim); }
+  .beyond-card .ic svg { width: 26px; height: 26px; }
+  .beyond-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+  .beyond-card p { color: var(--text-muted); font-size: 15px; line-height: 1.6; }
 
-  /* CONTACT / FOOTER */
+  /* ==========================================================================
+     CONTACT & FOOTER
+     ========================================================================== */
   .contact { text-align: center; }
+  .contact::before { display: none; }
   .contact h2 {
     font-family: var(--font-display); font-weight: 700;
-    font-size: clamp(34px, 6vw, 64px); letter-spacing: -0.03em; line-height: 1.02;
+    font-size: clamp(36px, 6vw, 68px); letter-spacing: -0.03em; line-height: 1.05;
   }
-  .contact h2 .grad {
-    background: linear-gradient(115deg, var(--accent), var(--accent-2));
-    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-  }
-  .contact p { color: var(--text-muted); margin: 20px auto 38px; max-width: 520px; font-size: 16.5px; }
-  .contact-methods { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .contact p { color: var(--text-muted); margin: 22px auto 42px; max-width: 600px; font-size: 17.5px; }
+
+  .contact-methods { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
   .contact-card {
     background: var(--surface); border: 1px solid var(--border);
-    border-radius: 14px; padding: 16px 22px; display: flex; align-items: center; gap: 13px;
-    transition: transform 0.35s var(--ease), border-color 0.3s, box-shadow 0.3s;
+    border-radius: 16px; padding: 18px 26px; display: flex; align-items: center; gap: 14px;
+    backdrop-filter: blur(16px);
+    transition: transform 0.4s var(--ease-bounce), border-color 0.35s, box-shadow 0.35s;
+    cursor: pointer;
+    position: relative; overflow: hidden;
   }
-  .contact-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
-  .contact-card svg { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; }
-  .contact-card .cc-label { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.12em; }
-  .contact-card .cc-val { font-size: 14.5px; font-weight: 500; }
+  .contact-card::after {
+    content: ""; position: absolute; inset: -50%;
+    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.03) 55%, transparent 60%);
+    transform: translateX(-100%); pointer-events: none;
+    transition: transform 0.6s var(--ease);
+  }
+  .contact-card:hover::after { transform: translateX(100%); }
+  .contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+    box-shadow: 0 15px 40px -10px var(--cyan-glow), 0 0 0 1px var(--cyan-dim);
+  }
+  .contact-card svg { width: 22px; height: 22px; color: var(--cyan); flex-shrink: 0; }
+  .contact-card .cc-label { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.12em; }
+  .contact-card .cc-val { font-size: 15px; font-weight: 600; color: var(--text); }
 
   footer {
-    border-top: 1px solid var(--border); margin-top: 90px;
-    padding: 30px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    border-top: 1px solid var(--border); margin-top: 100px;
+    padding: 36px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
   }
-  footer .fnote { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+  footer .fnote { font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); }
 
-  /* ============ REVEAL ANIMATIONS ============ */
-  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
-  .reveal.show { opacity: 1; transform: none; }
-  .reveal.d1 { transition-delay: 0.08s; }
-  .reveal.d2 { transition-delay: 0.16s; }
-  .reveal.d3 { transition-delay: 0.24s; }
+  /* TOAST NOTIFICATION */
+  .toast {
+    position: fixed; bottom: 30px; right: 30px; z-index: 1000;
+    background: var(--surface-solid); border: 1px solid var(--cyan);
+    padding: 14px 22px; border-radius: 12px; color: var(--text);
+    font-family: var(--font-mono); font-size: 13px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5), 0 0 20px var(--cyan-dim);
+    backdrop-filter: blur(16px);
+    transform: translateY(100px); opacity: 0;
+    transition: transform 0.4s var(--ease-bounce), opacity 0.4s;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .toast.show { transform: translateY(0); opacity: 1; }
+  .toast svg { color: var(--cyan); }
 
-  .hero-anim { opacity: 0; transform: translateY(24px); animation: heroUp 0.9s var(--ease) forwards; }
-  .ha1 { animation-delay: 0.1s; } .ha2 { animation-delay: 0.24s; } .ha3 { animation-delay: 0.38s; }
-  .ha4 { animation-delay: 0.52s; } .ha5 { animation-delay: 0.66s; }
-  @keyframes heroUp { to { opacity: 1; transform: none; } }
+  /* Quick Message Modal */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,0.8); backdrop-filter: blur(12px);
+    display: grid; place-items: center; opacity: 0; pointer-events: none;
+    transition: opacity 0.4s var(--ease);
+  }
+  .modal-overlay.active { opacity: 1; pointer-events: auto; }
+  .modal-box {
+    background: var(--surface-solid); border: 1px solid var(--border-strong);
+    border-radius: var(--radius); padding: 36px; max-width: 500px; width: 90%;
+    transform: scale(0.9) translateY(20px);
+    transition: transform 0.4s var(--ease-bounce);
+    box-shadow: 0 30px 80px -20px rgba(0,0,0,0.6), 0 0 40px var(--glow);
+  }
+  .modal-overlay.active .modal-box { transform: scale(1) translateY(0); }
+  .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .modal-head h3 { font-family: var(--font-display); font-size: 22px; font-weight: 700; }
+  .modal-close { font-size: 24px; color: var(--text-muted); cursor: pointer; transition: color 0.3s; }
+  .modal-close:hover { color: var(--accent); }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); display: block; margin-bottom: 6px; }
+  .form-input {
+    width: 100%; padding: 12px 16px; border-radius: 10px;
+    background: var(--bg); border: 1px solid var(--border);
+    color: var(--text); font-family: var(--font-body); font-size: 14.5px;
+    outline: none; transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .form-input:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px var(--cyan-dim); }
+  textarea.form-input { resize: vertical; min-height: 100px; }
 
-  /* ============ RESPONSIVE ============ */
-  @media (max-width: 880px) {
-    .nav-links { display: none; }
-    .about-grid, .edu-grid { grid-template-columns: 1fr; gap: 36px; }
+  /* ==========================================================================
+     REVEAL ANIMATIONS — Enhanced with blur + scale
+     ========================================================================== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+    filter: blur(6px);
+    transition: opacity 0.9s var(--ease), transform 0.9s var(--ease), filter 0.9s var(--ease);
+  }
+  .reveal.show {
+    opacity: 1; transform: none; filter: blur(0);
+  }
+  .reveal.d1 { transition-delay: 0.12s; }
+  .reveal.d2 { transition-delay: 0.24s; }
+  .reveal.d3 { transition-delay: 0.36s; }
+
+  /* Hero entrance with clip-path */
+  .hero-anim {
+    opacity: 0;
+    transform: translateY(30px);
+    clip-path: inset(100% 0 0 0);
+    animation: heroClipUp 1s var(--ease) forwards;
+  }
+  .ha1 { animation-delay: 0.3s; }
+  .ha2 { animation-delay: 0.5s; }
+  .ha3 { animation-delay: 0.7s; }
+  .ha4 { animation-delay: 0.9s; }
+  .ha5 { animation-delay: 1.1s; }
+  @keyframes heroClipUp {
+    to { opacity: 1; transform: none; clip-path: inset(0 0 0 0); }
+  }
+
+  /* ==========================================================================
+     RESPONSIVE BREAKPOINTS
+     ========================================================================== */
+  @media (max-width: 992px) {
+    .about-grid, .edu-grid { grid-template-columns: 1fr; gap: 40px; }
+    .tech-matrix { grid-template-columns: repeat(2, 1fr); }
     .skills-grid { grid-template-columns: 1fr; gap: 28px; }
+    .beyond-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 14px 20px; }
+    .nav-links {
+      position: fixed; top: 0; right: 0; bottom: 0; width: 280px;
+      background: var(--surface-solid); border-left: 1px solid var(--border);
+      flex-direction: column; padding: 90px 30px 40px; gap: 24px;
+      transform: translateX(100%); transition: transform 0.4s var(--ease);
+      box-shadow: -10px 0 40px rgba(0,0,0,0.6);
+      backdrop-filter: blur(20px);
+    }
+    .nav-links.open { transform: translateX(0); }
+    .mobile-menu-btn { display: grid; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .stat:nth-child(2) { border-right: none; }
     .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--border); }
-    .beyond-grid { grid-template-columns: 1fr; }
-    section { padding: 80px 0; }
+    section { padding: 85px 0; }
+    .geo-shape { display: none; }
+    #cursor-glow { display: none; }
   }
+
   @media (max-width: 520px) {
     .wrap { padding: 0 20px; }
-    nav { padding: 14px 20px; }
-    .job { padding-left: 52px; }
+    .hero h1 { font-size: 38px; }
+    .job { padding-left: 48px; }
+    .job-node { left: 11px; }
+    .timeline::before, .timeline-progress { left: 21px; }
     .stats-grid { grid-template-columns: 1fr; }
     .stat { border-right: none; border-bottom: 1px solid var(--border); }
     .stat:last-child { border-bottom: none; }
+    .tech-matrix { grid-template-columns: 1fr; }
   }
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
-    .reveal { opacity: 1; transform: none; }
-    .hero-anim { opacity: 1; transform: none; }
+    .reveal, .hero-anim { opacity: 1; transform: none; filter: none; clip-path: none; }
+    #ambient-particles, #cursor-glow, .geo-shape, .hero-mesh, .hero-video-bg { display: none !important; }
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-mark">NKS</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- AMBIENT PARTICLES (full-page) -->
+<canvas id="ambient-particles"></canvas>
+
+<!-- CURSOR GLOW -->
+<div id="cursor-glow"></div>
+
+<!-- NAVIGATION -->
 <nav id="nav">
   <a class="nav-brand" href="#top">
-    <span class="nav-mark">SN</span>
-    Savvana Naveen Kumar
+    <span class="nav-mark">NKS</span>
+    Naveen Kumar Savvana
   </a>
-  <div class="nav-links">
+  <div class="nav-links" id="navLinks">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
+    <a href="#matrix">Tech &amp; KPIs</a>
     <a href="#clients">Clients</a>
     <a href="#expertise">Expertise</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">
-    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-  </button>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="mobile-menu-btn" id="mobileBtn" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero" id="top">
+  <video class="hero-video-bg" autoplay loop muted playsinline>
+    <source src="15439674-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-mesh"></div>
   <canvas id="net-canvas"></canvas>
-  <div class="hero-glow"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <!-- Floating geometric shapes -->
+  <div class="geo-shape geo-hex"></div>
+  <div class="geo-shape geo-ring"></div>
+  <div class="geo-shape geo-diamond"></div>
+  <div class="geo-shape geo-cross"></div>
+
   <div class="wrap hero-inner">
-    <span class="hero-status hero-anim ha1"><span class="dot"></span> Senior Accounts Manager · SoftHQ Inc.</span>
-    <h1 class="hero-anim ha2">Connecting <span class="grad">talent</span><br/>to opportunity.</h1>
-    <p class="hero-role hero-anim ha3">Recruitment & Staffing Leader <span class="sep">/</span> US State &amp; Federal <span class="sep">/</span> MBA · CHRMP</p>
-    <p class="hero-lede hero-anim ha4">18+ years building and leading recruitment teams that staff government agencies and enterprise clients across the United States — from sourcing strategy to offer, end to end.</p>
+    <div class="badge-status hero-anim ha1">
+      <span class="dot"></span> Executive Talent Acquisition Leader · India &amp; USA Markets
+    </div>
+    <h1 class="hero-anim ha2">
+      Strategic Talent.<br/>
+      <span class="grad-text">Measurable Impact.</span>
+    </h1>
+    <div class="hero-role hero-anim ha3">
+      <span id="typed-role"></span>
+    </div>
+    <p class="hero-lede hero-anim ha4">
+      Results-oriented staffing leader with deep expertise in end-to-end talent operations, high-performance team building, ATS/VMS optimization, and KPI-driven hiring across India &amp; USA.
+    </p>
     <div class="hero-cta hero-anim ha5">
       <a class="btn btn-primary" href="#contact">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-        Get in touch
+        Connect with Naveen
       </a>
       <a class="btn btn-ghost" href="#experience">
-        View experience
+        Explore Career Timeline
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -558,171 +1408,427 @@
   <div class="scroll-hint"><span>Scroll</span><span class="line"></span></div>
 </header>
 
-<!-- STATS -->
+<!-- STATS STRIP -->
 <div class="stats">
   <div class="wrap">
     <div class="stats-grid">
-      <div class="stat"><div class="stat-num" data-count="16" data-suffix="+">0</div><div class="stat-label">Years in recruitment</div></div>
-      <div class="stat"><div class="stat-num" data-count="27" data-suffix="">0</div><div class="stat-label">Largest team led</div></div>
-      <div class="stat"><div class="stat-num" data-count="30" data-suffix="+">0</div><div class="stat-label">State &amp; federal clients</div></div>
-      <div class="stat"><div class="stat-num" data-count="5" data-suffix="">0</div><div class="stat-label">Organisations served</div></div>
+      <div class="stat">
+        <div class="stat-num grad-text" data-count="18" data-suffix="+">0</div>
+        <div class="stat-label">Years Staffing Leadership</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num grad-text" data-count="27" data-suffix="+">0</div>
+        <div class="stat-label">Max Direct Team Size</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num grad-text" data-count="50" data-suffix="+">0</div>
+        <div class="stat-label">Govt &amp; Global Clients</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num grad-text" data-count="95" data-suffix="%">0</div>
+        <div class="stat-label">Offer Acceptance Focus</div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ABOUT SECTION -->
 <section id="about">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">About</span>
-      <h2 class="section-title">A people-first operator with an<br/>end-to-end command of hiring.</h2>
+      <span class="eyebrow">Executive Profile</span>
+      <h2 class="section-title">Architecting scalable talent engines for <span class="grad-text">India &amp; USA</span> enterprise growth.</h2>
     </div>
     <div class="about-grid">
-      <div class="about-text reveal">
-        <p>I'm an analytical, results-oriented recruitment leader with <strong>16+ years of end-to-end recruiting and HR administration</strong>. My work spans the full hiring lifecycle — sourcing, screening, interview coordination, offer preparation, background verification and onboarding.</p>
-        <p>I've spent recent years specialising in <strong>US State &amp; Federal staffing</strong>, standing up dedicated delivery teams, training recruiters on government requirements, and building the systematic processes that keep complex public-sector hiring on schedule.</p>
-        <p>Beyond delivery, I handle <strong>performance management (KRA / KPA / KPI), training &amp; development, HRIS and policy design</strong> — and I take real pride in fostering a cooperative, accountable team culture.</p>
+      <!-- Profile Photo & Theme Sync Widget -->
+      <div class="glass-card profile-card reveal" id="profileThemeCard">
+        <div class="hud-glitch-text">Identity Stack Sync</div>
+        <div class="avatar-frame-container">
+          <div class="hud-corner top-left"></div>
+          <div class="hud-corner top-right"></div>
+          <div class="hud-corner bottom-left"></div>
+          <div class="hud-corner bottom-right"></div>
+          <div class="scanline"></div>
+          <div class="avatar-grid-overlay"></div>
+          <div class="avatar-frame">
+            <img id="profileAvatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7A94' stroke-width='1.5'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E" alt="Profile Photo" />
+          </div>
+        </div>
+        <div class="profile-actions">
+          <label for="photoUpload" class="btn btn-ghost upload-trigger-btn" style="margin: 0; display: inline-flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width: 16px; height: 16px; margin-right: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+            Upload Photo
+          </label>
+          <input type="file" id="photoUpload" accept="image/*" style="display: none;" onchange="handlePhotoUpload(event)" />
+          <button id="resetThemeBtn" class="btn btn-ghost reset-theme-btn" style="display: none;" onclick="resetCustomTheme()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width: 16px; height: 16px; margin-right: 8px;"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            Reset Accent
+          </button>
+        </div>
+        <div class="hud-data-panel">
+          <div class="hud-data-row"><span class="label">STATUS:</span> <span class="val" id="hudStatus">STANDBY</span></div>
+          <div class="hud-data-row"><span class="label">COLOR SYNC:</span> <span class="val" id="hudColor">DEFAULT</span></div>
+          <div class="hud-data-row"><span class="label">CHROMATIC HEX:</span> <span class="val" id="hudHex">#F59E0B</span></div>
+        </div>
       </div>
-      <div class="competency-card reveal d1">
-        <h3>Core competencies</h3>
+
+      <div class="about-text reveal">
+        <p>I am an <strong>Executive Talent Acquisition Leader</strong> with 18 years of proven experience designing and executing end-to-end recruitment operations for high-growth software, engineering, and government sector organizations.</p>
+        <p>My core philosophy centers on <strong>data-driven performance management</strong> — leveraging key metrics such as <em>Time-to-Fill, Quality of Hire, Offer Acceptance Rate, Sourcing Efficiency, and Recruiter Productivity</em> to directly accelerate business revenue and project milestones.</p>
+        <p>Throughout my leadership career across major staffing organizations, I have stood up high-performing teams of up to 27 recruiters, sales, and pre-sales consultants. I specialize in integrating emerging technologies, including <strong>AI-enabled screening tools</strong> and advanced ATS/VMS workflows, to dramatically improve sourcing velocity and candidate experience.</p>
+      </div>
+
+      <div class="glass-card competency-card reveal d1" id="compCard">
+        <h3>
+          <span>Core Competencies</span>
+          <span style="font-size:11px; opacity:0.8;">10 Key Areas</span>
+        </h3>
+        <div class="chips-filter">
+          <button class="chip-filter-btn active" onclick="filterChips('all')">All</button>
+          <button class="chip-filter-btn" onclick="filterChips('strat')">Strategy</button>
+          <button class="chip-filter-btn" onclick="filterChips('tech')">Tech &amp; AI</button>
+          <button class="chip-filter-btn" onclick="filterChips('lead')">Leadership</button>
+        </div>
         <div class="chips">
-          <span class="chip">Full-cycle recruiting</span>
-          <span class="chip">US State &amp; Federal staffing</span>
-          <span class="chip">Team leadership</span>
-          <span class="chip">Account management</span>
-          <span class="chip">Revenue generation</span>
-          <span class="chip">Performance appraisal</span>
-          <span class="chip">MBO · KRA / KPA / KPI</span>
-          <span class="chip">Training &amp; development</span>
-          <span class="chip">HRIS</span>
-          <span class="chip">Background verification</span>
-          <span class="chip">Rate negotiation</span>
-          <span class="chip">H1 transfer &amp; OPT hiring</span>
-          <span class="chip">Vendor &amp; client coordination</span>
-          <span class="chip">RFP support</span>
-          <span class="chip">Sourcing strategy</span>
+          <span class="chip" data-cat="strat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Strategic IT Talent Acquisition
+          </span>
+          <span class="chip" data-cat="strat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            End-to-End Staffing Process Ownership
+          </span>
+          <span class="chip" data-cat="tech">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Data-Driven Performance &amp; KPIs
+          </span>
+          <span class="chip" data-cat="strat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            High-Volume &amp; Niche Technical Sourcing
+          </span>
+          <span class="chip" data-cat="lead">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Team Leadership &amp; Mentorship
+          </span>
+          <span class="chip" data-cat="tech">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Recruitment Tech &amp; AI Adoption
+          </span>
+          <span class="chip" data-cat="lead">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Client &amp; Account Management (Govt/Commercial)
+          </span>
+          <span class="chip" data-cat="strat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Process Improvement &amp; Optimization
+          </span>
+          <span class="chip" data-cat="strat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Offer Negotiation &amp; Closing Rates
+          </span>
+          <span class="chip" data-cat="lead">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Contracts, Compliance &amp; Billing Control
+          </span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- TECH MATRIX & KPI ECOLOGY -->
+<section id="matrix" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Technology &amp; Analytics</span>
+      <h2 class="section-title">Recruitment tech stack &amp; <span class="grad-text">KPI Framework</span>.</h2>
+      <p>Leveraging cutting-edge ATS/VMS platforms, multi-region sourcing channels, and AI innovation to fuel recruitment efficiency.</p>
+    </div>
+
+    <div class="tech-matrix">
+      <!-- Card 1 -->
+      <div class="tech-card reveal">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>ATS &amp; VMS Platforms</h3>
+        <p>Hands-on mastery optimizing major recruitment tracking &amp; vendor management systems.</p>
+        <ul class="tech-list">
+          <li class="tech-badge highlight">CEIPAL ATS</li>
+          <li class="tech-badge">Vector VMS</li>
+          <li class="tech-badge">Commbuys</li>
+          <li class="tech-badge">Covendis</li>
+          <li class="tech-badge">Bidsyn</li>
+          <li class="tech-badge">ITPSRS</li>
+          <li class="tech-badge">Coolworks</li>
+          <li class="tech-badge">Dot Staff</li>
+          <li class="tech-badge">Beeline</li>
+          <li class="tech-badge">Taleo</li>
+          <li class="tech-badge">Synergy</li>
+          <li class="tech-badge">Track Talents</li>
+          <li class="tech-badge">Zoho Recruit</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="tech-card reveal d1">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>USA &amp; India Sourcing Tools</h3>
+        <p>Comprehensive direct sourcing channels across North America and India talent pools.</p>
+        <ul class="tech-list">
+          <li class="tech-badge highlight">Dice (USA)</li>
+          <li class="tech-badge">Monster (USA)</li>
+          <li class="tech-badge">Indeed</li>
+          <li class="tech-badge">Tech Fetch</li>
+          <li class="tech-badge">CareerBuilder</li>
+          <li class="tech-badge highlight">Naukri (India)</li>
+          <li class="tech-badge">Shine.com</li>
+          <li class="tech-badge">LinkedIn Recruiter</li>
+          <li class="tech-badge">Social Media Sourcing</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="tech-card reveal d2">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        </div>
+        <h3>Key KPI Focus &amp; AI Adoption</h3>
+        <p>Data-backed tracking and AI-driven automation to maximize team velocity.</p>
+        <ul class="tech-list">
+          <li class="tech-badge highlight">Time-to-Fill Optimization</li>
+          <li class="tech-badge">Quality of Hire</li>
+          <li class="tech-badge">Offer Acceptance Rate</li>
+          <li class="tech-badge">Submission-to-Interview %</li>
+          <li class="tech-badge">Cost per Placement</li>
+          <li class="tech-badge highlight">AI Screening &amp; Skill Mapping</li>
+          <li class="tech-badge">Predictive Performance Analytics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL EXPERIENCE TIMELINE -->
 <section id="experience">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Career</span>
-      <h2 class="section-title">Seventeen years, one through-line:<br/>building teams that deliver.</h2>
-      <p>A progression from hands-on recruiter to leader of multi-team delivery organisations serving public-sector and enterprise clients across the United States.</p>
+      <span class="eyebrow">Leadership Journey</span>
+      <h2 class="section-title">18 Years of Staffing &amp; Operations <span class="grad-text">Leadership</span>.</h2>
+      <p>A continuous track record of scaling recruitment teams, managing enterprise client relationships, and driving revenue growth across USA and India markets.</p>
+    </div>
+
+    <div class="timeline-filters reveal">
+      <button class="filter-btn active" onclick="filterTimeline('all')">All Roles</button>
+      <button class="filter-btn" onclick="filterTimeline('leadership')">AVP &amp; Leadership</button>
+      <button class="filter-btn" onclick="filterTimeline('us-gov')">US State &amp; Federal</button>
+      <button class="filter-btn" onclick="filterTimeline('it-recruiting')">IT &amp; Bench Sales</button>
     </div>
 
     <div class="timeline" id="timeline">
       <div class="timeline-progress" id="tlProgress"></div>
 
-      <!-- Job 1 -->
-      <div class="job reveal">
+      <!-- ROLE 1 -->
+      <div class="job reveal" data-category="leadership us-gov">
         <span class="job-node"></span>
         <div class="job-card">
           <div class="job-top">
-            <div class="job-title">Senior Accounts Manager</div>
-            <span class="job-date">Jun 2022 — Present</span>
+            <div class="job-title">AVP (Assistant Vice President)</div>
+            <span class="job-date">Nov 2025 — Present</span>
           </div>
-          <div class="job-meta"><span class="company">SoftHQ Inc.</span> · Remote</div>
+          <div class="job-meta">
+            <span class="company">Enterprise Talent Acquisition &amp; Staffing Operations</span> · <span class="loc">Bangalore, KA (Remote)</span>
+          </div>
           <ul class="job-bullets">
-            <li>Built and lead a 13-member delivery team dedicated to State &amp; Federal clients — 2 team leads, 10 recruiters and a data analyst.</li>
-            <li>Define client requirements, train the team on government hiring standards, and run a systematic end-to-end process for IT and non-IT roles.</li>
-            <li>Coordinate background-check and contracts teams on new hires and starts, and partner with presales on RFPs.</li>
-            <li>Run weekly coordination with public-sector points of contact and maintain candidate &amp; client records across the pipeline.</li>
+            <li>Direct end-to-end talent acquisition and staffing operations across India and US markets for contract, permanent, and project-based hiring mandates.</li>
+            <li>Lead recruitment strategy, delivery planning, and fulfillment execution to satisfy stringent client hiring targets, turnaround times (TAT), and quality benchmarks.</li>
+            <li>Oversee account operations, recruiter performance metrics, stakeholder governance, and service delivery across multi-domain technical skill sets.</li>
+            <li>Manage contract staffing operations including resource fulfillment, client coordination, SLA adherence, and workforce deployment management.</li>
+            <li>Supervised contract and commercial processes related to staffing engagements, including compliance alignment, documentation control, and operational governance.</li>
+            <li>Drive continuous process improvements across sourcing, screening, tracking, reporting, and escalation management to scale business delivery.</li>
           </ul>
+          <div class="job-section-subtitle">Key Lookout &amp; Enterprise Clients</div>
           <div class="job-tags">
-            <span class="tag-mini">State of MA</span><span class="tag-mini">CalPERS</span><span class="tag-mini">LAUSD</span><span class="tag-mini">Miami-Dade Schools</span><span class="tag-mini">State of WA</span>
-            <span class="tag-mini is-tool">CEIPAL ATS</span><span class="tag-mini is-tool">Vector VMS</span><span class="tag-mini is-tool">Commbuys</span>
+            <span class="tag-mini is-client">USA Government (State, Federal, County)</span>
+            <span class="tag-mini is-client">Tata Elxsi (USA)</span>
+            <span class="tag-mini is-client">TCS (USA &amp; India)</span>
+            <span class="tag-mini is-client">CVS Health</span>
+            <span class="tag-mini is-client">NTT DATA (India)</span>
+            <span class="tag-mini is-client">Akkodis (India)</span>
+            <span class="tag-mini is-tool">Operations Management</span>
+            <span class="tag-mini is-tool">Contracts &amp; Billing</span>
+            <span class="tag-mini is-tool">Sales &amp; Marketing</span>
           </div>
         </div>
       </div>
 
-      <!-- Job 2 -->
-      <div class="job reveal">
+      <!-- ROLE 2 -->
+      <div class="job reveal" data-category="leadership">
+        <span class="job-node"></span>
+        <div class="job-card">
+          <div class="job-top">
+            <div class="job-title">Assistant Vice President — AI Talent Acquisition</div>
+            <span class="job-date">Jan 2025 — Oct 2025</span>
+          </div>
+          <div class="job-meta">
+            <span class="company">Strategic Talent Solutions</span> · <span class="loc">Bangalore, KA (Remote)</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Spearheaded AI-enabled talent acquisition initiatives across IT, engineering, and emerging technology domains including AI/ML, RPA, cloud infrastructure, and cybersecurity.</li>
+            <li>Partnered with enterprise and startup clients across India and the US to architect strategic hiring roadmaps aligned with corporate transformation goals.</li>
+            <li>Applied market intelligence, talent analytics, cultural-fit evaluation, and behavioral insights to significantly elevate Quality of Hire.</li>
+            <li>Enhanced recruitment effectiveness through ATS optimization, automation, automated skill mapping, and recruitment pipeline acceleration.</li>
+            <li>Built trusted relationships with founders, CTOs, and HR leaders to deliver sustainable, high-impact staffing solutions.</li>
+          </ul>
+          <div class="job-section-subtitle">Key Clients Served</div>
+          <div class="job-tags">
+            <span class="tag-mini is-client">Apple (USA)</span>
+            <span class="tag-mini is-client">Airbus (USA)</span>
+            <span class="tag-mini is-client">Tata Elxsi (USA)</span>
+            <span class="tag-mini is-client">TCS (USA &amp; India)</span>
+            <span class="tag-mini is-client">USA Government Agencies</span>
+            <span class="tag-mini is-tool">AI/ML Hiring</span>
+            <span class="tag-mini is-tool">RPA &amp; Cloud</span>
+            <span class="tag-mini is-tool">Talent Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROLE 3 -->
+      <div class="job reveal" data-category="us-gov leadership">
+        <span class="job-node"></span>
+        <div class="job-card">
+          <div class="job-top">
+            <div class="job-title">Senior Accounts Manager</div>
+            <span class="job-date">Jun 2022 — Dec 2024</span>
+          </div>
+          <div class="job-meta">
+            <span class="company">State &amp; Federal Staffing Operations</span> · <span class="loc">Remote</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Led and scaled a high-performing recruitment team of 13+ members dedicated to US STATE AND FEDERAL government clients, establishing systematic end-to-end procedures for compliance.</li>
+            <li>Drove daily workflow, tracked open requisitions, and ensured rapid pipeline progression to reduce Time-to-Fill.</li>
+            <li>Collaborated cross-functionally with Background Check (BGC), Contracts, and Presales teams to streamline post-offer processes and boost Placement Rate.</li>
+            <li>Maintained rigorous data hygiene within ATS/VMS platforms (CEIPAL, Vector VMS, Commbuys) for transparent performance tracking.</li>
+            <li>Ensured accurate translation of complex government requirements into targeted sourcing strategies, maximizing Quality of Hire.</li>
+          </ul>
+          <div class="job-tags">
+            <span class="tag-mini is-client">State of MA</span>
+            <span class="tag-mini is-client">CalPERS</span>
+            <span class="tag-mini is-client">LAUSD</span>
+            <span class="tag-mini is-client">Miami-Dade Schools</span>
+            <span class="tag-mini is-client">State of WA</span>
+            <span class="tag-mini is-tool">CEIPAL ATS</span>
+            <span class="tag-mini is-tool">Vector VMS</span>
+            <span class="tag-mini is-tool">Commbuys</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROLE 4 -->
+      <div class="job reveal" data-category="leadership it-recruiting">
         <span class="job-node"></span>
         <div class="job-card">
           <div class="job-top">
             <div class="job-title">Recruitment Manager</div>
             <span class="job-date">Mar 2020 — Jun 2022</span>
           </div>
-          <div class="job-meta"><span class="company">Coolsoft LLC</span> · Bangalore, KA</div>
+          <div class="job-meta">
+            <span class="company">US IT Staffing Solutions</span> · <span class="loc">Bangalore, KA</span>
+          </div>
           <ul class="job-bullets">
-            <li>Led a 27-member organisation — 4 team leads, 16 recruiters, 5 presales and 2 bench-sales specialists.</li>
-            <li>Owned revenue generation, business development, and client retention &amp; acquisition for US staffing across all locations.</li>
-            <li>Managed full-cycle hiring including H1 transfer and OPT, negotiated pay rates, and matched candidates to client positions.</li>
-            <li>Introduced metrics and new processes that sharpened recruiter accountability and sense of urgency on open requisitions.</li>
+            <li>Managed and mentored a large team of 27 recruitment and sales professionals, aligning team execution with revenue targets across US locations.</li>
+            <li>Enhanced Sourcing Efficiency by training recruiters on advanced boolean search and job portal optimization (Indeed, Monster, Dice).</li>
+            <li>Implemented SLA-driven performance metrics that heightened team urgency, directly cutting Time-to-Fill on critical requisitions.</li>
+            <li>Managed complete candidate journey from initial screening through rate negotiation, offer release, and join confirmation.</li>
           </ul>
           <div class="job-tags">
-            <span class="tag-mini">19 US States</span><span class="tag-mini">CVS Health</span><span class="tag-mini">Morgan Stanley</span><span class="tag-mini">LG&amp;E</span><span class="tag-mini">LTI</span>
-            <span class="tag-mini is-tool">CoolWorks ATS</span><span class="tag-mini is-tool">Beeline</span><span class="tag-mini is-tool">Covendis</span>
+            <span class="tag-mini is-client">19 US States</span>
+            <span class="tag-mini is-client">CVS Health</span>
+            <span class="tag-mini is-client">Morgan Stanley</span>
+            <span class="tag-mini is-client">LG&amp;E</span>
+            <span class="tag-mini is-tool">CoolWorks ATS</span>
+            <span class="tag-mini is-tool">Beeline VMS</span>
+            <span class="tag-mini is-tool">Covendis</span>
           </div>
         </div>
       </div>
 
-      <!-- Job 3 -->
-      <div class="job reveal">
+      <!-- ROLE 5 -->
+      <div class="job reveal" data-category="it-recruiting">
         <span class="job-node"></span>
         <div class="job-card">
           <div class="job-top">
             <div class="job-title">Recruitment Manager</div>
             <span class="job-date">Oct 2016 — Jan 2020</span>
           </div>
-          <div class="job-meta"><span class="company">Wifinity Technologies</span> · Bangalore, KA</div>
+          <div class="job-meta">
+            <span class="company">IT Staffing &amp; Delivery</span> · <span class="loc">Bangalore, KA</span>
+          </div>
           <ul class="job-bullets">
-            <li>Led a team of 10+ recruiters placing high-end IT professionals on contract and full-time roles across the USA.</li>
-            <li>Gathered and qualified client requirements, ran technical screening, and negotiated rates with resources and corporations.</li>
-            <li>Specialised in software engineers/architects, database, network/security, QA, and technical program/project managers.</li>
-            <li>Built direct-client and prime-vendor relationships under MSA, and hired recruiters for the organisation.</li>
+            <li>Led a team of 10+ IT recruiters overseeing full lifecycle staffing for senior technical professionals in USA contract and permanent roles.</li>
+            <li>Accelerated technical resource delivery for critical client projects, optimizing Time-to-Hire and client satisfaction.</li>
+            <li>Executed advanced direct-sourcing techniques for hard-to-fill technical niches under tight client deadlines.</li>
+            <li>Managed pay rate and bill rate negotiations to optimize Cost per Placement while preserving candidate quality.</li>
           </ul>
           <div class="job-tags">
-            <span class="tag-mini">Capital One</span><span class="tag-mini">GDIT</span><span class="tag-mini">Tech Mahindra</span><span class="tag-mini">Cognizant</span><span class="tag-mini">Infosys</span>
-            <span class="tag-mini is-tool">Taleo</span><span class="tag-mini is-tool">Synergy</span>
+            <span class="tag-mini is-client">Capital One</span>
+            <span class="tag-mini is-client">GDIT</span>
+            <span class="tag-mini is-client">Tech Mahindra</span>
+            <span class="tag-mini is-client">Cognizant</span>
+            <span class="tag-mini is-client">Infosys</span>
+            <span class="tag-mini is-tool">Taleo</span>
+            <span class="tag-mini is-tool">Synergy</span>
           </div>
         </div>
       </div>
 
-      <!-- Job 4 -->
-      <div class="job reveal">
+      <!-- ROLE 6 -->
+      <div class="job reveal" data-category="it-recruiting">
         <span class="job-node"></span>
         <div class="job-card">
           <div class="job-top">
-            <div class="job-title">Senior HR / IT Recruiter</div>
+            <div class="job-title">Senior HR IT Recruiter</div>
             <span class="job-date">Jul 2015 — Oct 2016</span>
           </div>
-          <div class="job-meta"><span class="company">Gantec Corporation</span> · Chennai, TN</div>
+          <div class="job-meta">
+            <span class="company">IT Recruitment &amp; Bench Sales</span> · <span class="loc">Chennai, TN</span>
+          </div>
           <ul class="job-bullets">
-            <li>Led recruiters and bench-sales consultants, managing full-life-cycle recruiting from postings to final offers.</li>
-            <li>Pre-screened candidates with detailed phone screens to ensure the right fit, sourcing from end clients and partners.</li>
-            <li>Worked C2C, 1099 and W-2 engagements; coordinated interviews, references, background and drug-test initiation.</li>
-            <li>Established weekly reporting on requirements, submissions and interviews, plus team performance reviews.</li>
+            <li>Led recruiters and bench sales consultants across IT staffing verticals, maximizing closures and offer acceptance rates.</li>
+            <li>Implemented weekly tracking metrics for requirements, submissions, interview ratios, and onboarding SLAs.</li>
+            <li>Conducted rigorous pre-screening and technical alignment reviews to ensure high candidate submission quality.</li>
           </ul>
           <div class="job-tags">
-            <span class="tag-mini">Full-cycle IT recruiting</span><span class="tag-mini">C2C · 1099 · W-2</span><span class="tag-mini">Team reporting</span>
+            <span class="tag-mini">Bench Sales</span>
+            <span class="tag-mini">C2C / 1099 / W-2</span>
+            <span class="tag-mini">Offer Closing</span>
           </div>
         </div>
       </div>
 
-      <!-- Job 5 -->
-      <div class="job reveal">
+      <!-- ROLE 7 -->
+      <div class="job reveal" data-category="it-recruiting">
         <span class="job-node"></span>
         <div class="job-card">
           <div class="job-top">
             <div class="job-title">Senior HR</div>
             <span class="job-date">Sep 2008 — Apr 2015</span>
           </div>
-          <div class="job-meta"><span class="company">Octave Technologies</span> · Chennai, TN</div>
+          <div class="job-meta">
+            <span class="company">Software Industry Staffing &amp; HR</span> · <span class="loc">Chennai, TN</span>
+          </div>
           <ul class="job-bullets">
-            <li>Sourced, interviewed and selected applicants for technical positions, working with hiring managers on job duties.</li>
-            <li>Ran job-board, social and corporate-site postings; performed background checks and built passive-candidate networks.</li>
-            <li>Maintained ongoing university and campus-recruiting relationships, organising pre-visit activities and interview schedules.</li>
-            <li>Identified and pursued top prospects through targeted pre-screening and special office-visit invitations.</li>
+            <li>Sourced, interviewed, and selected technical talent across diverse software development and IT infrastructure domains.</li>
+            <li>Managed university relationships and campus hiring drives to build early-career talent pipelines.</li>
+            <li>Collaborated with hiring managers to refine job descriptions, interview rubrics, and post-placement evaluation.</li>
           </ul>
           <div class="job-tags">
-            <span class="tag-mini">Campus recruiting</span><span class="tag-mini">Background checks</span><span class="tag-mini">Sourcing &amp; networking</span>
+            <span class="tag-mini">Campus Hiring</span>
+            <span class="tag-mini">Technical Sourcing</span>
+            <span class="tag-mini">HR Administration</span>
           </div>
         </div>
       </div>
@@ -731,162 +1837,483 @@
   </div>
 </section>
 
-<!-- CLIENTS -->
+<!-- CLIENT ECOSYSTEM MARQUEE -->
 <section class="clients" id="clients">
   <div class="wrap">
-    <div class="section-head reveal" style="margin-bottom:40px;">
-      <span class="eyebrow">Trusted by</span>
-      <h2 class="section-title">Public-sector &amp; enterprise clients<br/>across the United States.</h2>
+    <div class="section-head reveal" style="margin-bottom:36px;">
+      <span class="eyebrow">Client Portfolio</span>
+      <h2 class="section-title">Trusted by <span class="grad-text">Global Enterprises</span> &amp; US Govt Bodies.</h2>
     </div>
   </div>
+
   <div class="marquee reveal">
     <div class="marquee-track" id="mq1"></div>
   </div>
-  <div class="marquee rev reveal" style="padding-bottom:8px;">
+  <div class="marquee rev reveal" style="padding-bottom:12px;">
     <div class="marquee-track" id="mq2"></div>
   </div>
 </section>
 
-<!-- EXPERTISE -->
+<!-- EXPERTISE & SKILL BENCHMARKS -->
 <section id="expertise">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Expertise</span>
-      <h2 class="section-title">Where the depth is.</h2>
-      <p>A self-assessed snapshot of the disciplines built up over five organisations and seventeen years.</p>
+      <span class="eyebrow">Leadership Domain Mastery</span>
+      <h2 class="section-title">Proven expertise across <span class="grad-text">Staffing &amp; HR</span> disciplines.</h2>
     </div>
+
     <div class="skills-grid" id="skills">
-      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">US Staffing &amp; Recruitment</span><span class="skill-val">98%</span></div><div class="skill-bar"><div class="skill-fill" data-w="98"></div></div></div>
-      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">State &amp; Federal Hiring</span><span class="skill-val">95%</span></div><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div></div>
-      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">Team Leadership &amp; Mentoring</span><span class="skill-val">94%</span></div><div class="skill-bar"><div class="skill-fill" data-w="94"></div></div></div>
-      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">Account &amp; Client Management</span><span class="skill-val">92%</span></div><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></div>
-      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">Performance Management (KRA/KPI)</span><span class="skill-val">88%</span></div><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></div>
-      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">Training &amp; Development</span><span class="skill-val">86%</span></div><div class="skill-bar"><div class="skill-fill" data-w="86"></div></div></div>
-      <div class="skill-row reveal"><div class="skill-head"><span class="skill-name">ATS / VMS Platforms</span><span class="skill-val">90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
-      <div class="skill-row reveal d1"><div class="skill-head"><span class="skill-name">Revenue &amp; Business Development</span><span class="skill-val">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+      <div class="skill-row reveal">
+        <div class="skill-head">
+          <span class="skill-name">Strategic IT &amp; Non-IT Talent Acquisition</span>
+          <span class="skill-val">98%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="98"></div></div>
+      </div>
+
+      <div class="skill-row reveal d1">
+        <div class="skill-head">
+          <span class="skill-name">US State, Federal &amp; Commercial Staffing</span>
+          <span class="skill-val">96%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="96"></div></div>
+      </div>
+
+      <div class="skill-row reveal">
+        <div class="skill-head">
+          <span class="skill-name">High-Performance Team Leadership</span>
+          <span class="skill-val">95%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
+      </div>
+
+      <div class="skill-row reveal d1">
+        <div class="skill-head">
+          <span class="skill-name">Account Operations &amp; Client Management</span>
+          <span class="skill-val">94%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="94"></div></div>
+      </div>
+
+      <div class="skill-row reveal">
+        <div class="skill-head">
+          <span class="skill-name">Data-Driven Performance Management (KPIs)</span>
+          <span class="skill-val">92%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+      </div>
+
+      <div class="skill-row reveal d1">
+        <div class="skill-head">
+          <span class="skill-name">AI Sourcing &amp; Tech Optimization (ATS/VMS)</span>
+          <span class="skill-val">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+      </div>
+
+      <div class="skill-row reveal">
+        <div class="skill-head">
+          <span class="skill-name">Offer Negotiation &amp; Placement Rate</span>
+          <span class="skill-val">95%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
+      </div>
+
+      <div class="skill-row reveal d1">
+        <div class="skill-head">
+          <span class="skill-name">Contracting, Compliance &amp; Onboarding</span>
+          <span class="skill-val">93%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-w="93"></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EDUCATION + CERT -->
-<section id="education" style="padding-top:0;">
+<!-- EDUCATION & CERTIFICATIONS -->
+<section id="education" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Education &amp; credentials</span>
-      <h2 class="section-title">The foundation.</h2>
+      <span class="eyebrow">Academic &amp; Certifications</span>
+      <h2 class="section-title">Educational Foundation &amp; <span class="grad-text">Credentials</span>.</h2>
     </div>
+
     <div class="edu-grid">
       <div class="panel reveal">
-        <h3>Academic qualifications</h3>
-        <div class="edu-item"><div class="deg">MBA — HR &amp; Marketing Management</div><div class="inst">Berhampur University</div></div>
-        <div class="edu-item"><div class="deg">B.Tech — Computer Science &amp; Engineering</div><div class="inst">National Institute of Science &amp; Technology, Berhampur · BPUT</div></div>
-        <div class="edu-item"><div class="deg">Intermediate</div><div class="inst">Sarada Junior College · Andhra Pradesh Board</div></div>
-        <div class="edu-item"><div class="deg">Schooling</div><div class="inst">Kendriya Vidyalaya · CBSE</div></div>
+        <h3>Academic Qualifications</h3>
+
+        <div class="edu-item">
+          <div class="deg">MBA — HR Management &amp; Marketing Management</div>
+          <div class="inst">Berhampur University</div>
+          <div class="details">Master of Business Administration specializing in Strategic Human Resources &amp; Marketing.</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="deg">B.Tech — Computer Science &amp; Engineering</div>
+          <div class="inst">National Institute of Science &amp; Technology (N.I.S.T)</div>
+          <div class="details">Biju Pattnaik University of Technology (BPUT). Deep technical foundation powering IT staffing command.</div>
+        </div>
       </div>
+
       <div class="panel reveal d1">
-        <h3>Certification</h3>
-        <span class="cert-badge">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"/></svg>
-          CHRMP · Advance
-        </span>
-        <p class="cert-detail">Certified Human Resource Management Professional<br/><span>Ripples Learning Services, Chennai · Jan – Apr 2016</span></p>
+        <h3>Professional Certifications</h3>
+
+        <div class="cert-card">
+          <span class="cert-badge">CHRMP Certified</span>
+          <h4>Certified Human Resource Management Professional</h4>
+          <p>Advance Ripples Learning Services, Chennai · Jan 2016 – Apr 2016</p>
+        </div>
+
+        <div class="cert-card">
+          <span class="cert-badge">Certified Recruiter</span>
+          <h4>Hirist.com Certified Recruiter</h4>
+          <p>Validated expertise in tech recruiting, candidate engagement, and modern sourcing.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BEYOND WORK -->
-<section id="beyond" style="padding-top:0;">
+<!-- BEYOND WORK / COMMUNITY IMPACT -->
+<section id="beyond">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Beyond work</span>
-      <h2 class="section-title">The person behind the pipeline.</h2>
+      <span class="eyebrow">Leadership Beyond Office</span>
+      <h2 class="section-title">Discipline, Community &amp; <span class="grad-text">Social Impact</span>.</h2>
     </div>
+
     <div class="beyond-grid">
       <div class="beyond-card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>Cyclone Phailin, 2013</h3>
-        <p>Served as an authorised coordinator for the Government of Odisha during public evacuation efforts — recognised with an award for the service.</p>
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Cyclone Phailin Coordinator (2013)</h3>
+        <p>Served as an authorized coordinator for the Government of Odisha during public evacuation efforts — recognized with an official government award for public service under crisis.</p>
       </div>
+
       <div class="beyond-card reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-1.25 2.5-2.5 3.5-2.5S7.75 22 9 22s2.25-2.5 3.5-2.5S15.75 22 17 22s2.25-2.5 3.5-2.5S22 22 22 22"/><path d="M11 3a8 8 0 0 1 8 8c0 1-3 3-8 3s-8-2-8-3a8 8 0 0 1 8-8z"/></svg></div>
-        <h3>Community campaigns</h3>
-        <p>Organised public road shows for "Green India, Clean India" and "Save Tiger" — turning recruiting energy toward causes.</p>
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Community &amp; Social Initiatives</h3>
+        <p>Organized public awareness campaigns and road shows for "Green India, Clean India" and "Save Tiger" — channeling leadership energy toward environmental and social causes.</p>
       </div>
+
       <div class="beyond-card reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.5 3 2.5 17 0 20M12 2c-2.5 3-2.5 17 0 20"/></svg></div>
-        <h3>Athlete &amp; competitor</h3>
-        <p>State-level basketball player and a professional kickboxer — the discipline and drive carry straight into the work.</p>
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="12 6 15.45 9.55 13.9 14.1 9.55 12 12 6"/></svg>
+        </div>
+        <h3>State Athlete &amp; Kickboxer</h3>
+        <p>State-level basketball player and professional kickboxer. The athletic discipline, resilience, and urgency carry directly into leading high-tempo staffing teams.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact" style="background: var(--bg-2); border-top: 1px solid var(--border);">
   <div class="wrap">
     <div class="reveal">
-      <span class="eyebrow" style="justify-content:center;">Let's talk</span>
-      <h2 style="margin-top:18px;">Building a team or<br/>filling a hard role? <span class="grad">Let's connect.</span></h2>
-      <p>Open to recruitment leadership, account management and US staffing partnerships. Reach out directly.</p>
+      <span class="eyebrow" style="justify-content:center;">Get In Touch</span>
+      <h2>Let's build high-performing <span class="grad-text">talent solutions</span> together.</h2>
+      <p>Open to Executive Talent Acquisition Leadership, Staffing Operations Management, and US/India Account Leadership roles.</p>
     </div>
+
     <div class="contact-methods reveal d1">
       <a class="contact-card" href="mailto:naveenkumar05@hotmail.com">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
-        <span><span class="cc-label">Email</span><br/><span class="cc-val">naveenkumar05@hotmail.com</span></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        <div>
+          <div class="cc-label">Email Directly</div>
+          <div class="cc-val">naveenkumar05@hotmail.com</div>
+        </div>
       </a>
+
       <a class="contact-card" href="tel:+917077648106">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span><span class="cc-label">Phone</span><br/><span class="cc-val">+91 70776 48106</span></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div>
+          <div class="cc-label">Call / WhatsApp</div>
+          <div class="cc-val">+91-7077648106</div>
+        </div>
       </a>
+
+      <a class="contact-card" href="tel:+917064660660">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div>
+          <div class="cc-label">Alt Phone</div>
+          <div class="cc-val">+91-7064660660</div>
+        </div>
+      </a>
+
       <a class="contact-card" href="https://www.linkedin.com/in/savvana-naveen-kumar-b21396101" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        <span><span class="cc-label">LinkedIn</span><br/><span class="cc-val">View profile</span></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <div>
+          <div class="cc-label">LinkedIn Profile</div>
+          <div class="cc-val">Savvana Naveen Kumar</div>
+        </div>
       </a>
+
+      <button class="contact-card" onclick="openModal()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <div>
+          <div class="cc-label">Quick Message</div>
+          <div class="cc-val">Send Direct Note</div>
+        </div>
+      </button>
     </div>
+
     <footer>
-      <span class="fnote">© 2026 · Savvana Naveen Kumar</span>
-      <span class="fnote">Recruitment &amp; Staffing Leadership · IN</span>
+      <span class="fnote">© 2026 Naveen Kumar Savvana · All Rights Reserved</span>
+      <span class="fnote">Executive Talent Acquisition Leader · India &amp; USA</span>
     </footer>
   </div>
 </section>
 
+<!-- QUICK MESSAGE MODAL -->
+<div class="modal-overlay" id="msgModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>Send a Note to Naveen</h3>
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+    </div>
+    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" class="form-input" required placeholder="John Doe" />
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" class="form-input" required placeholder="john@company.com" />
+      </div>
+      <div class="form-group">
+        <label>Message / Hiring Mandate</label>
+        <textarea class="form-input" required placeholder="Hello Naveen, we'd like to connect regarding..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+  <span id="toastMsg">Message sent successfully!</span>
+</div>
+
 <script>
-  /* ===== THEME TOGGLE (in-memory; respects system preference at load) ===== */
-  const root = document.documentElement;
-  const toggle = document.getElementById('themeToggle');
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-    root.setAttribute('data-theme', 'light');
-  }
-  toggle.addEventListener('click', () => {
-    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
+  /* ==========================================================================
+     LOADING SCREEN
+     ========================================================================== */
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hidden');
+    }, 2200);
   });
 
-  /* ===== NAV scrolled state ===== */
+  /* ==========================================================================
+     THEME MANAGEMENT
+     ========================================================================== */
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+
+  toggle.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    if (localStorage.getItem('profile_photo_custom')) {
+      applyCustomThemeFromHues();
+    }
+  });
+
+  /* Mobile menu toggle */
+  const mobileBtn = document.getElementById('mobileBtn');
+  const navLinks = document.getElementById('navLinks');
+  mobileBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  /* Navbar Scroll Effect & Active Section Tracking */
   const nav = document.getElementById('nav');
-  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 30);
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  const sections = document.querySelectorAll('section, header');
+  const navItems = document.querySelectorAll('.nav-links a');
 
-  /* ===== CLIENT MARQUEE (built from resume client list) ===== */
-  const govClients = ['State of Massachusetts','State of Washington','State of Kansas','State of Vermont','State of Iowa','CalPERS','LAUSD','Houston ISD','Miami-Dade Schools','City of Boston','City of San Diego','Oakland County, MI','County of Santa Clara','City of Sunnyvale','Golden Gate Bridge District','Metropolitan Water District','City of Anaheim','WAHBE','University of Iowa','WA Gambling Commission'];
-  const entClients = ['Capital One','CVS Health','Morgan Stanley','GDIT','Tech Mahindra','Cognizant','Infosys','LG&E','LTI','State of NE','State of OR','State of GA','State of VA','State of TX','State of CA','State of NY','State of NJ','State of FL'];
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 30);
 
-  function buildTrack(el, list, fed) {
-    const make = name => {
-      const d = document.createElement('span');
-      d.className = 'client-pill' + (fed ? ' fed' : '');
-      d.innerHTML = '<span class="pin"></span>' + name;
-      return d;
-    };
-    // duplicate the list for a seamless loop
-    [...list, ...list].forEach(n => el.appendChild(make(n)));
+    let current = '';
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 120;
+      if (window.scrollY >= top) {
+        current = sec.getAttribute('id');
+      }
+    });
+
+    navItems.forEach(item => {
+      item.classList.remove('active');
+      if (item.getAttribute('href') === `#${current}`) {
+        item.classList.add('active');
+      }
+    });
+  }, { passive: true });
+
+  /* ==========================================================================
+     CURSOR GLOW EFFECT
+     ========================================================================== */
+  const cursorGlow = document.getElementById('cursor-glow');
+  let cx = 0, cy = 0, px = 0, py = 0;
+  document.addEventListener('mousemove', e => {
+    cx = e.clientX; cy = e.clientY;
+  });
+  function animateCursor() {
+    px += (cx - px) * 0.08;
+    py += (cy - py) * 0.08;
+    cursorGlow.style.left = px + 'px';
+    cursorGlow.style.top = py + 'px';
+    requestAnimationFrame(animateCursor);
   }
-  buildTrack(document.getElementById('mq1'), govClients, true);
-  buildTrack(document.getElementById('mq2'), entClients, false);
+  animateCursor();
 
-  /* ===== REVEAL ON SCROLL ===== */
+  /* ==========================================================================
+     3D TILT EFFECT ON CARDS
+     ========================================================================== */
+  const tiltCards = document.querySelectorAll('.glass-card, .job-card, .tech-card, .panel, .beyond-card, .contact-card');
+  tiltCards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = (y - centerY) / centerY * -4;
+      const rotateY = (x - centerX) / centerX * 4;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+
+  /* ==========================================================================
+     BUTTON RIPPLE EFFECT
+     ========================================================================== */
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const ripple = document.createElement('span');
+      ripple.className = 'ripple';
+      const rect = this.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+      this.appendChild(ripple);
+      ripple.addEventListener('animationend', () => ripple.remove());
+    });
+  });
+
+  /* ==========================================================================
+     HERO TYPING EFFECT
+     ========================================================================== */
+  const roleTexts = [
+    'AVP Talent Acquisition',
+    '18+ Years Leadership',
+    'AI-Enabled Recruiting',
+    'US Public & Commercial Sector'
+  ];
+  const typedEl = document.getElementById('typed-role');
+  let roleIdx = 0, charIdx = 0, isDeleting = false;
+
+  function typeRole() {
+    const currentText = roleTexts[roleIdx];
+    if (!isDeleting) {
+      typedEl.textContent = currentText.substring(0, charIdx + 1);
+      charIdx++;
+      if (charIdx === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeRole, 2000);
+        return;
+      }
+      setTimeout(typeRole, 60);
+    } else {
+      typedEl.textContent = currentText.substring(0, charIdx - 1);
+      charIdx--;
+      if (charIdx === 0) {
+        isDeleting = false;
+        roleIdx = (roleIdx + 1) % roleTexts.length;
+        setTimeout(typeRole, 400);
+        return;
+      }
+      setTimeout(typeRole, 30);
+    }
+  }
+  setTimeout(typeRole, 2500);
+
+  /* ==========================================================================
+     CLIENT ECOSYSTEM MARQUEE DATA
+     ========================================================================== */
+  const govClients = [
+    'USA State & Federal Government','State of Massachusetts','State of Washington','State of Kansas',
+    'State of Vermont','State of Iowa','CalPERS','LAUSD','Houston ISD','Miami-Dade Schools','City of Boston',
+    'City of San Diego','Oakland County, MI','County of Santa Clara','City of Sunnyvale','Golden Gate Bridge District'
+  ];
+  const enterpriseClients = [
+    'Apple (USA)','Airbus (USA)','Tata Elxsi (USA)','TCS (USA & India)','CVS Health','Morgan Stanley','GDIT',
+    'Tech Mahindra','Cognizant','Infosys','NTT DATA (India)','Akkodis (India)','LG&E','LTI'
+  ];
+
+  function buildMarquee(el, list, flagClass) {
+    const make = name => {
+      const span = document.createElement('span');
+      span.className = `client-pill ${flagClass}`;
+      span.innerHTML = `<span class="pin"></span>${name}`;
+      return span;
+    };
+    [...list, ...list].forEach(item => el.appendChild(make(item)));
+  }
+
+  buildMarquee(document.getElementById('mq1'), govClients, 'fed');
+  buildMarquee(document.getElementById('mq2'), enterpriseClients, 'ind');
+
+  /* ==========================================================================
+     INTERACTIVE FILTERS (COMPETENCIES & TIMELINE)
+     ========================================================================== */
+  function filterChips(cat) {
+    document.querySelectorAll('.chip-filter-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    document.querySelectorAll('#compCard .chip').forEach(chip => {
+      if (cat === 'all' || chip.dataset.cat === cat) {
+        chip.style.display = 'inline-flex';
+        chip.style.opacity = '1';
+        chip.style.transform = 'translateY(0)';
+      } else {
+        chip.style.opacity = '0';
+        chip.style.transform = 'translateY(10px)';
+        setTimeout(() => { chip.style.display = 'none'; }, 300);
+      }
+    });
+  }
+
+  function filterTimeline(cat) {
+    document.querySelectorAll('.timeline-filters .filter-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    document.querySelectorAll('.timeline .job').forEach(job => {
+      if (cat === 'all' || job.dataset.category.includes(cat)) {
+        job.classList.remove('hidden');
+      } else {
+        job.classList.add('hidden');
+      }
+    });
+    updateTimeline();
+  }
+
+  /* ==========================================================================
+     INTERSECTION OBSERVERS (REVEAL, SKILLS, COUNTERS)
+     ========================================================================== */
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -895,10 +2322,11 @@
         revealObserver.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  /* ===== SKILL BARS ===== */
+  /* Skill bars animation */
   const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -906,34 +2334,37 @@
         skillObserver.unobserve(e.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.3 });
+
   document.querySelectorAll('.skill-fill').forEach(el => skillObserver.observe(el));
 
-  /* ===== COUNTERS ===== */
+  /* Counter Animation — with glow pulse */
   const countObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
       const el = e.target;
       const target = +el.dataset.count;
       const suffix = el.dataset.suffix || '';
-      const dur = 1400; const start = performance.now();
+      const dur = 2000;
+      const start = performance.now();
       const tick = now => {
         const p = Math.min((now - start) / dur, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
+        const eased = 1 - Math.pow(1 - p, 4);
         el.textContent = Math.round(eased * target) + suffix;
         if (p < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
       countObserver.unobserve(el);
     });
-  }, { threshold: 0.6 });
+  }, { threshold: 0.5 });
+
   document.querySelectorAll('.stat-num').forEach(el => countObserver.observe(el));
 
-  /* ===== TIMELINE PROGRESS LINE ===== */
+  /* Timeline line height updates on scroll */
   const timeline = document.getElementById('timeline');
   const tlProgress = document.getElementById('tlProgress');
   function updateTimeline() {
-    if (!timeline) return;
+    if (!timeline || !tlProgress) return;
     const r = timeline.getBoundingClientRect();
     const vh = window.innerHeight;
     const total = r.height;
@@ -943,7 +2374,9 @@
   window.addEventListener('scroll', updateTimeline, { passive: true });
   updateTimeline();
 
-  /* ===== HERO NETWORK CANVAS (talent-connection motif) ===== */
+  /* ==========================================================================
+     HERO GOLDEN NETWORK CONSTELLATION CANVAS
+     ========================================================================== */
   const canvas = document.getElementById('net-canvas');
   const ctx = canvas.getContext('2d');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -954,66 +2387,446 @@
     return getComputedStyle(root).getPropertyValue(name).trim();
   }
 
-  function resize() {
+  function resizeCanvas() {
     const hero = document.querySelector('.hero');
     w = hero.clientWidth; h = hero.clientHeight;
     canvas.width = w * dpr; canvas.height = h * dpr;
     canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const count = Math.min(Math.floor(w * h / 16000), 90);
+
+    const count = Math.min(Math.floor(w * h / 14000), 100);
     nodes = [];
     for (let i = 0; i < count; i++) {
       nodes.push({
-        x: Math.random() * w, y: Math.random() * h,
-        vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
-        r: Math.random() * 1.8 + 1
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        r: Math.random() * 2 + 1.2,
+        pulse: Math.random() * Math.PI,
+        isCyan: Math.random() > 0.75
       });
     }
   }
 
-  function draw() {
+  function drawNodes() {
     ctx.clearRect(0, 0, w, h);
     const lineColor = cssVar('--net-line');
     const dotColor = cssVar('--net-dot');
+    const cyanColor = cssVar('--cyan');
+
     for (let i = 0; i < nodes.length; i++) {
       const n = nodes[i];
       n.x += n.vx; n.y += n.vy;
       if (n.x < 0 || n.x > w) n.vx *= -1;
       if (n.y < 0 || n.y > h) n.vy *= -1;
-      // mouse attraction (subtle)
+
+      /* Magnetic Mouse attraction */
       const mdx = mouse.x - n.x, mdy = mouse.y - n.y;
       const md = Math.hypot(mdx, mdy);
-      if (md < 160) { n.x += mdx * 0.002; n.y += mdy * 0.002; }
+      if (md < 200) {
+        n.x += mdx * 0.004;
+        n.y += mdy * 0.004;
+      }
+
+      /* Draw connecting lines */
       for (let j = i + 1; j < nodes.length; j++) {
         const m = nodes[j];
         const dx = n.x - m.x, dy = n.y - m.y;
         const dist = Math.hypot(dx, dy);
-        if (dist < 130) {
-          ctx.globalAlpha = (1 - dist / 130) * 0.9;
-          ctx.strokeStyle = lineColor;
+        if (dist < 150) {
+          const alpha = (1 - dist / 150) * 0.7;
+          ctx.globalAlpha = alpha;
+          ctx.strokeStyle = (n.isCyan || m.isCyan) ? cyanColor : lineColor;
           ctx.lineWidth = 1;
-          ctx.beginPath(); ctx.moveTo(n.x, n.y); ctx.lineTo(m.x, m.y); ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(n.x, n.y);
+          ctx.lineTo(m.x, m.y);
+          ctx.stroke();
         }
       }
     }
+
     ctx.globalAlpha = 1;
     for (const n of nodes) {
-      ctx.fillStyle = dotColor;
-      ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
+      n.pulse += 0.02;
+      const size = n.r + Math.sin(n.pulse) * 0.6;
+      ctx.fillStyle = n.isCyan ? cyanColor : dotColor;
+      ctx.shadowColor = n.isCyan ? cyanColor : dotColor;
+      ctx.shadowBlur = 8;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, Math.max(size, 1), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.shadowBlur = 0;
     }
-    if (!reduceMotion) requestAnimationFrame(draw);
+
+    if (!reduceMotion) requestAnimationFrame(drawNodes);
   }
 
-  const hero = document.querySelector('.hero');
-  hero.addEventListener('mousemove', (e) => {
-    const rect = hero.getBoundingClientRect();
-    mouse.x = e.clientX - rect.left; mouse.y = e.clientY - rect.top;
+  const heroSection = document.querySelector('.hero');
+  heroSection.addEventListener('mousemove', (e) => {
+    const rect = heroSection.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
   });
-  hero.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+  heroSection.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
 
-  resize();
-  window.addEventListener('resize', resize);
-  if (reduceMotion) { draw(); } else { requestAnimationFrame(draw); }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+  if (reduceMotion) { drawNodes(); } else { requestAnimationFrame(drawNodes); }
+
+  /* ==========================================================================
+     AMBIENT PARTICLES (Full page, subtle)
+     ========================================================================== */
+  const ambientCanvas = document.getElementById('ambient-particles');
+  const actx = ambientCanvas.getContext('2d');
+  let aParticles = [];
+
+  function resizeAmbient() {
+    ambientCanvas.width = window.innerWidth * dpr;
+    ambientCanvas.height = window.innerHeight * dpr;
+    ambientCanvas.style.width = window.innerWidth + 'px';
+    ambientCanvas.style.height = window.innerHeight + 'px';
+    actx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    aParticles = [];
+    const count = Math.min(Math.floor(window.innerWidth * window.innerHeight / 40000), 40);
+    for (let i = 0; i < count; i++) {
+      aParticles.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.5 + 0.5,
+        vx: (Math.random() - 0.5) * 0.15,
+        vy: (Math.random() - 0.5) * 0.15,
+        alpha: Math.random() * 0.4 + 0.1,
+        isCyan: Math.random() > 0.6
+      });
+    }
+  }
+
+  function drawAmbient() {
+    actx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    const dotColor = cssVar('--net-dot');
+    const cyanColor = cssVar('--cyan');
+
+    for (const p of aParticles) {
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < 0) p.x = window.innerWidth;
+      if (p.x > window.innerWidth) p.x = 0;
+      if (p.y < 0) p.y = window.innerHeight;
+      if (p.y > window.innerHeight) p.y = 0;
+
+      actx.globalAlpha = p.alpha;
+      actx.fillStyle = p.isCyan ? cyanColor : dotColor;
+      actx.beginPath();
+      actx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      actx.fill();
+    }
+    actx.globalAlpha = 1;
+
+    if (!reduceMotion) requestAnimationFrame(drawAmbient);
+  }
+
+  resizeAmbient();
+  window.addEventListener('resize', resizeAmbient);
+  if (!reduceMotion) requestAnimationFrame(drawAmbient);
+
+  /* ==========================================================================
+     DYNAMIC THEME SYNC FROM PROFILE PHOTO
+     ========================================================================== */
+  function handlePhotoUpload(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(event) {
+      const base64Data = event.target.result;
+      document.getElementById('profileAvatar').src = base64Data;
+      localStorage.setItem('profile_photo_custom', base64Data);
+      syncThemeWithPhoto(base64Data);
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function syncThemeWithPhoto(base64Data) {
+    const hudStatus = document.getElementById('hudStatus');
+    const hudColor = document.getElementById('hudColor');
+    const hudHex = document.getElementById('hudHex');
+    const resetBtn = document.getElementById('resetThemeBtn');
+
+    hudStatus.textContent = "SYNCING...";
+    hudStatus.style.color = "var(--cyan)";
+
+    const img = new Image();
+    img.src = base64Data;
+    img.onload = function() {
+      // Draw to small canvas for pixel analysis
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const size = 40;
+      canvas.width = size;
+      canvas.height = size;
+      ctx.drawImage(img, 0, 0, size, size);
+
+      const imgData = ctx.getImageData(0, 0, size, size).data;
+      const hueCounts = new Array(360).fill(0);
+      let validPixels = 0;
+      let rSum = 0, gSum = 0, bSum = 0;
+
+      for (let i = 0; i < imgData.length; i += 4) {
+        const r = imgData[i];
+        const g = imgData[i+1];
+        const b = imgData[i+2];
+        const a = imgData[i+3];
+
+        if (a < 200) continue; // Skip semi-transparent pixels
+
+        const hsl = rgbToHsl(r, g, b);
+        // Focus on colorful pixels (skip grey, black, white)
+        if (hsl.s > 0.15 && hsl.l > 0.15 && hsl.l < 0.85) {
+          const hIdx = Math.floor(hsl.h * 360) % 360;
+          hueCounts[hIdx]++;
+          validPixels++;
+          rSum += r;
+          gSum += g;
+          bSum += b;
+        }
+      }
+
+      // Smooth hue distribution using window averaging
+      const smoothed = new Array(360).fill(0);
+      for (let i = 0; i < 360; i++) {
+        let sum = 0;
+        for (let w = -10; w <= 10; w++) {
+          const idx = (i + w + 360) % 360;
+          sum += hueCounts[idx];
+        }
+        smoothed[i] = sum;
+      }
+
+      // Find primary dominant hue
+      let primaryHue = 45; // Default Amber
+      let maxVal = -1;
+      for (let i = 0; i < 360; i++) {
+        if (smoothed[i] > maxVal) {
+          maxVal = smoothed[i];
+          primaryHue = i;
+        }
+      }
+
+      // Find secondary dominant hue (at least 60 degrees away)
+      let secondaryHue = (primaryHue + 180) % 360; // Default complementary
+      let secondaryMax = -1;
+      for (let i = 0; i < 360; i++) {
+        const diff = Math.min(Math.abs(i - primaryHue), 360 - Math.abs(i - primaryHue));
+        if (diff >= 60 && smoothed[i] > secondaryMax) {
+          secondaryMax = smoothed[i];
+          secondaryHue = i;
+        }
+      }
+
+      // If we got very little color distribution, make a clean complementary/split theme
+      if (validPixels < 20) {
+        primaryHue = 45;
+        secondaryHue = 195; // Cyan
+        rSum = 245; gSum = 158; bSum = 11;
+      }
+
+      // Calculate hex color representing the primary hue
+      const rgb = hslToRgb(primaryHue / 360, 0.9, 0.5);
+      const hex = rgbToHex(rgb[0], rgb[1], rgb[2]);
+
+      // Save Hues to LocalStorage
+      localStorage.setItem('profile_theme_accent', primaryHue);
+      localStorage.setItem('profile_theme_cyan', secondaryHue);
+
+      // Apply Hues to CSS Variables
+      applyCustomThemeFromHues(primaryHue, secondaryHue);
+
+      // Update HUD interface
+      hudStatus.textContent = "ACTIVE";
+      hudStatus.style.color = "var(--accent)";
+      hudColor.textContent = "SYNCED";
+      hudColor.style.color = "var(--cyan)";
+      hudHex.textContent = hex;
+      hudHex.style.color = "var(--accent)";
+      resetBtn.style.display = "inline-flex";
+
+      showToast("Theme synced with profile image colors!");
+    };
+  }
+
+  function applyCustomThemeFromHues(accentHue, cyanHue) {
+    if (accentHue === undefined || cyanHue === undefined) {
+      accentHue = localStorage.getItem('profile_theme_accent');
+      cyanHue = localStorage.getItem('profile_theme_cyan');
+      if (accentHue === null || cyanHue === null) return;
+      accentHue = parseInt(accentHue, 10);
+      cyanHue = parseInt(cyanHue, 10);
+    }
+
+    const currentTheme = root.getAttribute('data-theme') || 'dark';
+
+    if (currentTheme === 'dark') {
+      root.style.setProperty('--accent', `hsl(${accentHue}, 90%, 50%)`);
+      root.style.setProperty('--accent-hover', `hsl(${accentHue}, 90%, 40%)`);
+      root.style.setProperty('--accent-2', `hsl(${(accentHue + 30) % 360}, 95%, 50%)`);
+      root.style.setProperty('--accent-3', `hsl(${(accentHue - 30 + 360) % 360}, 95%, 65%)`);
+      root.style.setProperty('--cyan', `hsl(${cyanHue}, 85%, 55%)`);
+      root.style.setProperty('--cyan-dim', `hsla(${cyanHue}, 85%, 55%, 0.15)`);
+      root.style.setProperty('--cyan-glow', `hsla(${cyanHue}, 85%, 55%, 0.4)`);
+      root.style.setProperty('--accent-light', `hsla(${accentHue}, 90%, 50%, 0.12)`);
+      root.style.setProperty('--glow', `hsla(${accentHue}, 90%, 50%, 0.25)`);
+      root.style.setProperty('--glow-strong', `hsla(${accentHue}, 90%, 50%, 0.5)`);
+      root.style.setProperty('--net-line', `hsla(${accentHue}, 90%, 50%, 0.15)`);
+      root.style.setProperty('--net-dot', `hsla(${accentHue}, 90%, 50%, 0.7)`);
+      root.style.setProperty('--card-glow', `radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsla(${accentHue}, 90%, 50%, 0.08), transparent 40%)`);
+    } else {
+      root.style.setProperty('--accent', `hsl(${accentHue}, 85%, 45%)`);
+      root.style.setProperty('--accent-hover', `hsl(${accentHue}, 85%, 35%)`);
+      root.style.setProperty('--accent-2', `hsl(${(accentHue + 30) % 360}, 85%, 40%)`);
+      root.style.setProperty('--accent-3', `hsl(${(accentHue - 30 + 360) % 360}, 85%, 50%)`);
+      root.style.setProperty('--cyan', `hsl(${cyanHue}, 85%, 42%)`);
+      root.style.setProperty('--cyan-dim', `hsla(${cyanHue}, 85%, 42%, 0.1)`);
+      root.style.setProperty('--cyan-glow', `hsla(${cyanHue}, 85%, 42%, 0.25)`);
+      root.style.setProperty('--accent-light', `hsla(${accentHue}, 85%, 45%, 0.1)`);
+      root.style.setProperty('--glow', `hsla(${accentHue}, 85%, 45%, 0.16)`);
+      root.style.setProperty('--glow-strong', `hsla(${accentHue}, 85%, 45%, 0.3)`);
+      root.style.setProperty('--net-line', `hsla(${accentHue}, 85%, 45%, 0.15)`);
+      root.style.setProperty('--net-dot', `hsla(${accentHue}, 85%, 45%, 0.55)`);
+      root.style.setProperty('--card-glow', `radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsla(${accentHue}, 85%, 45%, 0.06), transparent 40%)`);
+    }
+  }
+
+  function resetCustomTheme() {
+    localStorage.removeItem('profile_photo_custom');
+    localStorage.removeItem('profile_theme_accent');
+    localStorage.removeItem('profile_theme_cyan');
+
+    // Remove inline style variables
+    root.removeAttribute('style');
+
+    // Reset components to default
+    document.getElementById('profileAvatar').src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7A94' stroke-width='1.5'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E";
+    document.getElementById('hudStatus').textContent = "STANDBY";
+    document.getElementById('hudStatus').style.color = "";
+    document.getElementById('hudColor').textContent = "DEFAULT";
+    document.getElementById('hudColor').style.color = "";
+    document.getElementById('hudHex').textContent = "#F59E0B";
+    document.getElementById('hudHex').style.color = "";
+    document.getElementById('resetThemeBtn').style.display = "none";
+    document.getElementById('photoUpload').value = "";
+
+    showToast("Theme colors reset to default.");
+  }
+
+  // Load saved theme and photo on startup
+  function initCustomTheme() {
+    const savedPhoto = localStorage.getItem('profile_photo_custom');
+    if (savedPhoto) {
+      document.getElementById('profileAvatar').src = savedPhoto;
+      
+      const primaryHue = localStorage.getItem('profile_theme_accent');
+      const secondaryHue = localStorage.getItem('profile_theme_cyan');
+      if (primaryHue && secondaryHue) {
+        applyCustomThemeFromHues(parseInt(primaryHue, 10), parseInt(secondaryHue, 10));
+
+        const rgb = hslToRgb(parseInt(primaryHue, 10) / 360, 0.9, 0.5);
+        const hex = rgbToHex(rgb[0], rgb[1], rgb[2]);
+
+        const hudStatus = document.getElementById('hudStatus');
+        const hudColor = document.getElementById('hudColor');
+        const hudHex = document.getElementById('hudHex');
+        const resetBtn = document.getElementById('resetThemeBtn');
+
+        hudStatus.textContent = "ACTIVE";
+        hudStatus.style.color = "var(--accent)";
+        hudColor.textContent = "SYNCED";
+        hudColor.style.color = "var(--cyan)";
+        hudHex.textContent = hex;
+        hudHex.style.color = "var(--accent)";
+        resetBtn.style.display = "inline-flex";
+      }
+    }
+  }
+
+  /* COLOR UTILITIES */
+  function rgbToHsl(r, g, b) {
+    r /= 255; g /= 255; b /= 255;
+    const max = Math.max(r, g, b), min = Math.min(r, g, b);
+    let h, s, l = (max + min) / 2;
+
+    if (max === min) {
+      h = s = 0; // achromatic
+    } else {
+      const d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+      switch (max) {
+        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+        case g: h = (b - r) / d + 2; break;
+        case b: h = (r - g) / d + 4; break;
+      }
+      h /= 6;
+    }
+    return { h, s, l };
+  }
+
+  function hslToRgb(h, s, l) {
+    let r, g, b;
+    if (s === 0) {
+      r = g = b = l; // achromatic
+    } else {
+      const hue2rgb = (p, q, t) => {
+        if (t < 0) t += 1;
+        if (t > 1) t -= 1;
+        if (t < 1/6) return p + (q - p) * 6 * t;
+        if (t < 1/2) return q;
+        if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+        return p;
+      };
+      const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+      const p = 2 * l - q;
+      r = hue2rgb(p, q, h + 1/3);
+      g = hue2rgb(p, q, h);
+      b = hue2rgb(p, q, h - 1/3);
+    }
+    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+  }
+
+  function rgbToHex(r, g, b) {
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase();
+  }
+
+  // Invoke init on load
+  document.addEventListener('DOMContentLoaded', initCustomTheme);
+  // Also invoke if script loads post DOMContentLoaded
+  if (document.readyState === "interactive" || document.readyState === "complete") {
+    initCustomTheme();
+  }
+
+  /* ==========================================================================
+     MODAL & TOAST HANDLERS
+     ========================================================================== */
+  function openModal() {
+    document.getElementById('msgModal').classList.add('active');
+  }
+  function closeModal() {
+    document.getElementById('msgModal').classList.remove('active');
+  }
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    closeModal();
+    showToast("Thank you! Message sent to Naveen.");
+    e.target.reset();
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    document.getElementById('toastMsg').textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 4000);
+  }
 </script>
 </body>
 </html>
