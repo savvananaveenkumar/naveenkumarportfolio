@@ -165,6 +165,10 @@
     position: fixed; inset: 0; z-index: 0; pointer-events: none;
   }
 
+  #net-canvas {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  }
+
   /* Cursor Glow */
   #cursor-glow {
     position: fixed; width: 400px; height: 400px; border-radius: 50%;
@@ -353,13 +357,6 @@
     33% { transform: scale(1.05) translate(-2%, 3%); }
     66% { transform: scale(0.98) translate(3%, -2%); }
     100% { transform: scale(1.03) translate(-1%, 1%); }
-  }
-
-  #net-canvas {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%;
-    z-index: 2;
-    pointer-events: auto;
   }
 
   /* Floating geometric shapes */
@@ -1318,7 +1315,7 @@
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
     .reveal, .hero-anim { opacity: 1; transform: none; filter: none; clip-path: none; }
-    #ambient-particles, #cursor-glow, .geo-shape, .hero-mesh, .hero-video-bg { display: none !important; }
+    #ambient-particles, #net-canvas, #cursor-glow, .geo-shape, .hero-mesh, .hero-video-bg { display: none !important; }
   }
 </style>
 </head>
@@ -1334,6 +1331,7 @@
 
 <!-- AMBIENT PARTICLES (full-page) -->
 <canvas id="ambient-particles"></canvas>
+<canvas id="net-canvas"></canvas>
 
 <!-- CURSOR GLOW -->
 <div id="cursor-glow"></div>
@@ -1370,7 +1368,6 @@
     <source src="15439674-uhd_3840_2160_30fps.mp4" type="video/mp4" />
   </video>
   <div class="hero-mesh"></div>
-  <canvas id="net-canvas"></canvas>
   <div class="hero-glow-1"></div>
   <div class="hero-glow-2"></div>
 
@@ -2375,7 +2372,7 @@
   updateTimeline();
 
   /* ==========================================================================
-     HERO GOLDEN NETWORK CONSTELLATION CANVAS
+     GOLDEN NETWORK CONSTELLATION CANVAS (Full page)
      ========================================================================== */
   const canvas = document.getElementById('net-canvas');
   const ctx = canvas.getContext('2d');
@@ -2388,8 +2385,7 @@
   }
 
   function resizeCanvas() {
-    const hero = document.querySelector('.hero');
-    w = hero.clientWidth; h = hero.clientHeight;
+    w = window.innerWidth; h = window.innerHeight;
     canvas.width = w * dpr; canvas.height = h * dpr;
     canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -2463,13 +2459,11 @@
     if (!reduceMotion) requestAnimationFrame(drawNodes);
   }
 
-  const heroSection = document.querySelector('.hero');
-  heroSection.addEventListener('mousemove', (e) => {
-    const rect = heroSection.getBoundingClientRect();
-    mouse.x = e.clientX - rect.left;
-    mouse.y = e.clientY - rect.top;
+  window.addEventListener('mousemove', (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
   });
-  heroSection.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+  document.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
 
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
@@ -2531,6 +2525,20 @@
   resizeAmbient();
   window.addEventListener('resize', resizeAmbient);
   if (!reduceMotion) requestAnimationFrame(drawAmbient);
+
+  /* ==========================================================================
+     KEEP PARTICLE CANVASES OUT OF THE HERO/BANNER
+     ========================================================================== */
+  const heroEl = document.querySelector('.hero');
+  function clipParticlesBelowHero() {
+    const clipTop = Math.max(0, heroEl.getBoundingClientRect().bottom);
+    const clipVal = `inset(${clipTop}px 0 0 0)`;
+    canvas.style.clipPath = clipVal;
+    ambientCanvas.style.clipPath = clipVal;
+  }
+  window.addEventListener('scroll', clipParticlesBelowHero, { passive: true });
+  window.addEventListener('resize', clipParticlesBelowHero);
+  clipParticlesBelowHero();
 
   /* ==========================================================================
      DYNAMIC THEME SYNC FROM PROFILE PHOTO
